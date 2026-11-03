@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:"Manrope";font-weight:800;src:url(../assets/fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:"Manrope";font-weight:700;src:url(../assets/fonts/manrope-latin-700-normal.woff2)}
+@font-face{font-family:"Caveat";font-weight:700;src:url(../assets/fonts/caveat-latin-700-normal.woff2)}
+*{box-sizing:border-box;margin:0}
+body{width:1200px;height:630px;background:#F6F2E8;font-family:Manrope;color:#06251C;padding:44px;display:flex;gap:40px;align-items:stretch}
+.card{flex:1;background:#2D6BFF;border-radius:36px;padding:48px 52px;color:#fff;display:flex;flex-direction:column;justify-content:space-between}
+.eyebrow{font-size:26px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.92}
+h1{font-size:{{ title_size }}px;line-height:1.02;font-weight:800;margin-top:18px}
+.hl{background:#FFD43B;color:#06251C;padding:0 .14em;border-radius:12px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.sub{font-size:36px;font-weight:700;margin-top:20px}
+.note{font-family:Caveat;font-size:46px;color:#FFD43B;transform:rotate(-1.5deg);margin-top:8px}
+.side{width:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;text-align:center}
+.side img{width:250px;height:250px;border-radius:50%;object-fit:cover;border:8px solid #2D6BFF}
+.chip{font-size:30px;font-weight:800;background:#FFD43B;border-radius:14px;padding:8px 18px}
+.handle{font-size:28px;font-weight:800}
+</style></head>
+<body>
+  <div class="card">
+    <div>
+      <div class="eyebrow">Ms Sweeney Decoded</div>
+      <h1>{{ title|safe }}</h1>
+      <p class="sub">{{ sub }}</p>
+    </div>
+    <p class="note">{{ note }}</p>
+  </div>
+  <div class="side">
+    <img src="../assets/amanda.jpg" alt="">
+    {% if chip %}<span class="chip">{{ chip }}</span>{% endif %}
+    <span class="handle">@mssweeneysays</span>
+  </div>
+</body></html>

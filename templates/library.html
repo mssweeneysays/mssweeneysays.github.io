@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ms Sweeney Decoded · School cheat sheets</title>
+<meta name="description" content="{{ description }}">
+<link rel="canonical" href="{{ url }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ms Sweeney Says">
+<meta property="og:title" content="Ms Sweeney Decoded: one-page school cheat sheets">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ url }}">
+<meta property="og:image" content="{{ url }}og.png?v={{ build }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ms Sweeney Decoded: one-page school cheat sheets">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ url }}og.png?v={{ build }}">
+<meta name="theme-color" content="#2D6BFF">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/sheet.css?v={{ build }}">
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero lib-hero">
+  <div class="eyebrow">Ms Sweeney Decoded</div>
+  <h1>Your school, <span class="hl">on one page</span></h1>
+  <p class="sub">What each school says matters most, straight from its own Common Data Set. Pick yours.</p>
+</header>
+
+<div class="toolbar">
+  <span class="lbl" style="font-weight:800;font-size:14px">{{ schools|length }} school{{ '' if schools|length == 1 else 's' }} so far</span>
+  <button class="share tap" type="button" data-share data-url="{{ url }}" data-title="Ms Sweeney Decoded" data-text="One-page college cheat sheets, straight from each school's own data." data-msg="share-msg-top">{{ share_icon|safe }}Share</button>
+</div>
+<p class="share-msg" id="share-msg-top" aria-live="polite"></p>
+
+<ul class="cards">
+  {%- for s in schools %}
+  <li><a class="card tap" href="{{ s.slug }}/">
+    <div class="row"><h2>{{ s.name }}</h2><span class="dl">{{ s.library.deadline_text }}</span></div>
+    <p>{{ s.library.blurb }}</p>
+    <span class="go">Open the cheat sheet →</span>
+  </a></li>
+  {%- endfor %}
+</ul>
+
+<section class="ask">
+  <div class="kicker">Don't see your school?</div>
+  <h2 style="font-size:22px">Tell me which one to make next.</h2>
+  <p class="lede">Comment your school on any of my videos, or send me a message. The most-asked schools get made first.</p>
+  <a class="btn tap" href="https://ig.me/m/mssweeneysays" target="_blank" rel="noopener">Message me on Instagram →</a>
+</section>
+
+<footer>
+  <span class="me">Made by Ms Sweeney, former UChicago admissions reader.</span>
+  <span>Every sheet comes from the school's own Common Data Set and admissions site. Check the school's site for anything that changes.</span>
+  <a href="https://www.instagram.com/mssweeneysays/" target="_blank" rel="noopener">Follow @mssweeneysays for your next school →</a>
+</footer>
+
+</div>
+<script src="assets/sheet.js?v={{ build }}"></script>
+</body>
+</html>
