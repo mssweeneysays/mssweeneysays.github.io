@@ -1,6 +1,6 @@
 {
   "slug": "ucla",
-  "status": "draft",
+  "status": "live",
   "review_note": "Draft for Amanda's review. Numbers to check against the printed CDS before this goes in any DM.",
   "name": "UCLA",
   "short": "UCLA",
@@ -40,8 +40,8 @@
   "ladder": {
     "kicker": "What UCLA actually cares about",
     "title": "Only 3 things are top-tier. Test scores aren't considered at all.",
-    "lede": "By senior fall, your classes and GPA are mostly set. Your PIQs are the top-tier piece you can still change before Nov 30.",
-    "very_important": ["How hard your classes are", "Your GPA", "Your essays (the UC calls them PIQs)"],
+    "lede": "By senior fall, your classes and GPA are mostly set. Your essays, which UC calls Personal Insight Questions (PIQs), are the top-tier piece you can still change before Nov 30.",
+    "very_important": ["How hard your classes are", "Your GPA", "Your essays (PIQs)"],
     "important": ["Activities", "Talent", "Character", "Volunteering", "Work experience"],
     "considered": ["First in your family to go to college", "Where you live", "California residency"],
     "not_considered": ["Test scores", "Class rank", "Recommendation letters", "Interview", "Family went to UCLA", "Religion", "How often you toured or emailed"],
@@ -129,7 +129,7 @@
 
   "notes": {
     "parents": "I'm applying to UCLA (UC application due Nov 30). UCLA meets about 91% of need on average for students who qualify. Can we run the net price calculator together this week? https://nces.ed.gov/collegenavigator/?id=110662",
-    "offer": "I'm applying to UCLA (UC application due Nov 30). Ms Sweeney, a former UChicago admissions reader, gives feedback on all 4 PIQs together. Can we talk about it? You can DM her the word PIQ on Instagram: @mssweeneysays"
+    "offer": "I'm applying to UCLA (UC application due Nov 30). Ms Sweeney, a former UChicago admissions reader, gives feedback on all 4 UC essays (Personal Insight Questions, or PIQs) together. Can we talk about it? You can DM her the word PIQ on Instagram: @mssweeneysays"
   },
 
   "footer_source": "Source: UCLA 2025–26 Common Data Set (sections C1, C7, C8, C11–C12, G1, H2) and UC Admissions. Check UC's site for anything that changes."
