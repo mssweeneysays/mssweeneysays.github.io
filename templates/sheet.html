@@ -116,7 +116,7 @@
   <h2 id="h-numbers">Where are you?</h2>
   <p class="lede">{{ s.numbers.lede }}</p>
   <div class="gpa-in">
-    <label for="gpa"><span class="s">My weighted GPA</span><span class="p">Your student's weighted GPA</span></label>
+    <label for="gpa">{% if s.numbers.gpa.get('label') %}{{ sp(s.numbers.gpa.label) }}{% else %}<span class="s">My weighted GPA</span><span class="p">Your student's weighted GPA</span>{% endif %}</label>
     <input class="tap" id="gpa" type="number" inputmode="decimal" min="2" max="5.5" step="0.01" placeholder="Tap ✎">
     <span class="hint">Tap the box and type, like 4.20. Stays on your phone. Nothing is saved or sent.</span>
   </div>

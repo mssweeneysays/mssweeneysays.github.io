@@ -1,0 +1,147 @@
+{
+  "slug": "ucla",
+  "status": "draft",
+  "review_note": "Draft for Amanda's review. Numbers to check against the printed CDS before this goes in any DM.",
+  "name": "UCLA",
+  "short": "UCLA",
+  "cds_year": "2025–26",
+  "updated": "2026-11-04",
+
+  "preview": {
+    "title": "UCLA, decoded on one page",
+    "description": "What UCLA says matters most, where admitted students landed, and 4 moves to make before Nov 30. Straight from UCLA's own Common Data Set.",
+    "image_line": "Only 3 things are top-tier. Test scores count for zero.",
+    "share_text": "UCLA's one-page application cheat sheet, straight from UCLA's own data."
+  },
+  "library": {
+    "blurb": "Only 3 things are top-tier. About 1 in 11 got in.",
+    "deadline_text": "UC app due Nov 30"
+  },
+
+  "hero": {
+    "headline": {"s": "your one-page application check", "p": "your student's one-page application check"},
+    "sub": "Straight from UCLA's own 2025–26 Common Data Set."
+  },
+  "deadline": {"date": "2026-11-30", "display": "Nov 30", "label": "UC application deadline"},
+
+  "chances": {
+    "kicker": "Your chances",
+    "title": "About 1 in 11 applicants got in.",
+    "lede": {
+      "s": "145,086 students applied for fall 2025. 13,659 got in. Most of them had great grades, so the rest of this page is about where you can still stand out.",
+      "p": "145,086 students applied for fall 2025. 13,659 got in. Most of them had great grades, so the rest of this page is about where your student can still stand out."
+    },
+    "grids": [
+      {"filled": 9, "big": "9", "who": "All first-year applicants", "color": "#FFD43B", "aria": "About 9 of 100 dots filled: 9.4% of first-year applicants were admitted"}
+    ],
+    "src": "Fall 2025 first-years (C1): 13,659 of 145,086 admitted (9.4%). UCLA's Common Data Set doesn't split this by California vs. out of state."
+  },
+
+  "ladder": {
+    "kicker": "What UCLA actually cares about",
+    "title": "Only 3 things are top-tier. Test scores aren't considered at all.",
+    "lede": "By senior fall, your classes and GPA are mostly set. Your PIQs are the top-tier piece you can still change before Nov 30.",
+    "very_important": ["How hard your classes are", "Your GPA", "Your essays (the UC calls them PIQs)"],
+    "important": ["Activities", "Talent", "Character", "Volunteering", "Work experience"],
+    "considered": ["First in your family to go to college", "Where you live", "California residency"],
+    "not_considered": ["Test scores", "Class rank", "Recommendation letters", "Interview", "Family went to UCLA", "Religion", "How often you toured or emailed"],
+    "note": "Top tier = where your hours go before Nov 30 ↓",
+    "src": "Section C7, first-year admission factors, 2025–26 Common Data Set."
+  },
+
+  "numbers": {
+    "kicker": "Where admitted students landed",
+    "lede": "Type your GPA on a 4.0 scale to see where it sits next to UCLA's first-years. This is a range, not a cutoff.",
+    "gpa": {
+      "label": {"s": "My GPA (4.0 scale)", "p": "Your student's GPA (4.0 scale)"},
+      "avg": 3.94, "min": 3.0, "max": 4.0, "ticks": ["3.0", "3.25", "3.5", "3.75", "4.0"],
+      "avg_label": "UCLA average 3.94",
+      "default": "Average GPA of enrolled first-years: 3.94 on a 4.0 scale.",
+      "near": "Right around UCLA's average. Now your top-tier rows decide it: how hard your classes were, and your PIQs.",
+      "above": "At or above UCLA's average. Good start. Your classes and PIQs still do the heavy lifting.",
+      "below": "Below UCLA's average. That's not a no. Your PIQs are top-tier too, and they're the piece you can still change. Put your hours there."
+    },
+    "facts": [
+      {"big": "59%", "text": "of enrolled first-years had a 4.0 GPA. Another 35% were between 3.75 and 3.99."}
+    ],
+    "tests_intro": "",
+    "tests": [],
+    "src": "Sections C11–C12: enrolled first-years, fall 2025 (99.8% reported a GPA). UCLA doesn't use SAT/ACT scores or class rank in admission (C7, C8)."
+  },
+
+  "dates": {
+    "title": "One deadline. No early round at UCLA.",
+    "items": [
+      {"d": "Nov 30", "now": true, "html": "<b>UC application</b> due. One application covers every UC campus."},
+      {"d": "Mar 31", "html": "Decisions out."},
+      {"d": "May 1", "html": "Deadline to say yes."}
+    ],
+    "src": "UC application deadline (admission.universityofcalifornia.edu), checked Nov 4, 2026. Decision and reply dates: Section C, 2025–26 Common Data Set."
+  },
+
+  "money": {
+    "kicker": {"s": "Send this part to your parents", "p": "The money part"},
+    "title": "If you qualify for aid, UCLA meets about 91% of need on average.",
+    "lede": "The sticker price isn't your price. The net price calculator gives your family a real estimate in about 15 minutes.",
+    "need_met": 91,
+    "costs": [
+      {"label": "Tuition + fees, California", "amount": 16383},
+      {"label": "Tuition + fees, out of state", "amount": 55653}
+    ],
+    "aid_line": "About 4 in 10 first-years get need-based grants. The average need-based package is <b>$34,312</b> a year.",
+    "npc_url": "https://nces.ed.gov/collegenavigator/?id=110662",
+    "npc_label": "Find UCLA's net price calculator →",
+    "src": "Sections G1 and H2, 2025–26 Common Data Set. Tuition and required fees only; on-campus housing and food (about $19,779) cost extra."
+  },
+
+  "todo": {
+    "kicker": {"s": "Do this tonight", "p": "Do this together tonight"},
+    "title": "4 moves, all aimed at UCLA's top tier.",
+    "items": [
+      {"title": "Pick your 4 PIQs.", "body": "You answer 4 of 8 questions, up to 350 words each. Pick the 4 that show 4 different sides of you."},
+      {"title": "Add the details.", "body": "UC says PIQs aren't essays. Readers want what you did, your role and what changed."},
+      {"title": "List your hardest classes.", "body": "Honors, AP, IB, dual enrollment. How hard your classes are is top-tier here."},
+      {"title": "Type your grades from your transcript.", "body": "On the UC application you enter your own grades. Keep your transcript open and copy them exactly. Don't type from memory.", "quirk": true}
+    ],
+    "done": "All 4 done. That's a real application. ✓"
+  },
+
+  "self_check": {
+    "kicker": "The reader's check",
+    "title": {"s": "Are your PIQs doing their job?", "p": "Are your student's PIQs doing their job?"},
+    "lede": {
+      "s": "PIQs are top-tier at UCLA. Here's what I looked for as an admissions reader. Read all 4 of your PIQs together, then tap what's true.",
+      "p": "PIQs are top-tier at UCLA. Here's what I looked for as an admissions reader. Read all 4 of your student's PIQs together, then tap what's true."
+    },
+    "items": [
+      {"title": "Each one answers the exact question asked.", "body": "Circle the key words in the question. Every paragraph should answer them, not a question close to them."},
+      {"title": "Only you could have written it.", "body": "Swap in a friend's name. If it still works, it isn't specific enough yet."},
+      {"title": "It shows what you did.", "body": "Your role, your steps, what changed. Not just what the team or club did."},
+      {"title": "The 4 show 4 different sides of you.", "body": "If two PIQs tell the same story, swap one for a side of you the reader hasn't met yet."}
+    ],
+    "after": {"s": "Not sure you can check all four? That's normal. It's hard to judge your own writing.", "p": "Not sure? That's normal. It's hard to judge writing you're close to."},
+    "all_done": "All 4. Nice work. A fresh reader can still catch what you can't see."
+  },
+
+  "take": {
+    "heading": "What I saw as an admissions reader",
+    "quote": "When almost everyone has a 3.75 or higher, grades stop telling readers apart. Your PIQs are where a reader finally meets you. Give them four different reasons to remember you."
+  },
+
+  "offer": {
+    "kicker": "Before you hit submit",
+    "title": {"s": "Want a former admissions reader to read your 4 PIQs?", "p": "Want a former admissions reader to read your student's 4 PIQs?"},
+    "lede": {
+      "s": "I read applications at UChicago. I'll read all 4 of your PIQs together the way a reader would and rank what to fix first. You do the writing. I give the feedback. One read covers every UC you apply to.",
+      "p": "I read applications at UChicago. I'll read all 4 of your student's PIQs together the way a reader would and rank what to fix first. Feedback only, so the writing stays theirs. One read covers every UC they apply to."
+    },
+    "cta": "DM me \"PIQ\" on Instagram →"
+  },
+
+  "notes": {
+    "parents": "I'm applying to UCLA (UC application due Nov 30). UCLA meets about 91% of need on average for students who qualify. Can we run the net price calculator together this week? https://nces.ed.gov/collegenavigator/?id=110662",
+    "offer": "I'm applying to UCLA (UC application due Nov 30). Ms Sweeney, a former UChicago admissions reader, gives feedback on all 4 PIQs together. Can we talk about it? You can DM her the word PIQ on Instagram: @mssweeneysays"
+  },
+
+  "footer_source": "Source: UCLA 2025–26 Common Data Set (sections C1, C7, C8, C11–C12, G1, H2) and UC Admissions. Check UC's site for anything that changes."
+}

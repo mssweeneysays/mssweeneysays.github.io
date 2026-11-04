@@ -51,6 +51,7 @@
   if (G && $('gpa')) {
     var pct = function(v){ return Math.min(100, Math.max(0, (v - G.min) / (G.max - G.min) * 100)); };
     $('avg').style.left = $('avg-label').style.left = pct(G.avg) + '%';
+    var ap = pct(G.avg); $('avg-label').style.transform = ap > 85 ? 'translateX(-100%)' : (ap < 15 ? 'translateX(0)' : 'translateX(-50%)');
     var you = $('you'), youL = $('you-label'), out = $('readout');
     $('gpa').addEventListener('input', function(){
       var v = parseFloat(this.value);
