@@ -70,7 +70,11 @@
   <a class="tap" href="#counts">What counts ↓</a>
   <a class="tap" href="#numbers">Your numbers ↓</a>
   <a class="tap" href="#money">Money ↓</a>
+  {%- if s.todo %}
   <a class="tap" href="#todo">To-do ↓</a>
+  {%- elif s.self_check %}
+  <a class="tap" href="#check">Reader's check ↓</a>
+  {%- endif %}
 </nav>
 
 <section id="chances" aria-labelledby="h-chances">
@@ -184,6 +188,7 @@
   <p class="src">{{ s.money.src }}</p>
 </section>
 
+{%- if s.todo %}
 <section id="todo" aria-labelledby="h-todo">
   <div class="kicker">{{ sp(s.todo.kicker) }}</div>
   <h2 id="h-todo">{{ s.todo.title }}</h2>
@@ -195,6 +200,7 @@
   </ul>
   <p class="progress" id="progress" aria-live="polite">0 of {{ s.todo['items']|length }} done</p>
 </section>
+{%- endif %}
 
 {%- if s.self_check %}
 <section id="check" class="essay" aria-labelledby="h-check">

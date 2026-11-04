@@ -32,7 +32,7 @@ ICON_SVG = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">'
             'stroke-linecap="round" stroke-linejoin="round"/></svg>')
 
 REQUIRED = ["slug", "status", "name", "short", "updated", "preview", "library", "hero", "deadline",
-            "chances", "ladder", "numbers", "dates", "money", "todo", "take", "offer", "notes", "footer_source"]
+            "chances", "ladder", "numbers", "dates", "money", "take", "offer", "notes", "footer_source"]
 
 env = Environment(loader=FileSystemLoader(ROOT / "templates"), undefined=StrictUndefined,
                   autoescape=True, trim_blocks=False, lstrip_blocks=False)
@@ -48,6 +48,7 @@ def load_schools():
         if s["status"] not in ("draft", "live"):
             sys.exit(f"{f.name}: status must be draft or live")
         s.setdefault("self_check", None)
+        s.setdefault("todo", None)
         schools.append(s)
     return schools
 
@@ -59,7 +60,7 @@ def page_data(s):
         "deadline": s["deadline"]["date"],
         "grids": [{"filled": g["filled"], "color": g["color"]} for g in s["chances"]["grids"]],
         "gpa": s["numbers"]["gpa"],
-        "todo_done": s["todo"]["done"],
+        "todo_done": (s["todo"] or {}).get("done", ""),
         "check_done": (s["self_check"] or {}).get("all_done", ""),
         "notes": s["notes"],
     }, ensure_ascii=False).replace("</", "<\\/")

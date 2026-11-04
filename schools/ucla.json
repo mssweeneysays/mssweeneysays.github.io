@@ -94,17 +94,6 @@
     "src": "Sections G1 and H2, 2025–26 Common Data Set. Tuition and required fees only; on-campus housing and food (about $19,779) cost extra."
   },
 
-  "todo": {
-    "kicker": {"s": "Do this tonight", "p": "Do this together tonight"},
-    "title": "4 moves, all aimed at UCLA's top tier.",
-    "items": [
-      {"title": "Pick your 4 PIQs.", "body": "You answer 4 of 8 questions, up to 350 words each. Pick the 4 that show 4 different sides of you."},
-      {"title": "Add the details.", "body": "UC says PIQs aren't essays. Readers want what you did, your role and what changed."},
-      {"title": "List your hardest classes.", "body": "Honors, AP, IB, dual enrollment. How hard your classes are is top-tier here."},
-      {"title": "Type your grades from your transcript.", "body": "On the UC application you enter your own grades. Keep your transcript open and copy them exactly. Don't type from memory.", "quirk": true}
-    ],
-    "done": "All 4 done. That's a real application. ✓"
-  },
 
   "self_check": {
     "kicker": "The reader's check",
