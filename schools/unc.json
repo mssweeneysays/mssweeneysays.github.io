@@ -57,9 +57,9 @@
       "avg": 4.47, "min": 3.5, "max": 5.0, "ticks": ["3.5", "4.0", "4.5", "5.0"],
       "avg_label": "UNC average 4.47",
       "default": "Average weighted GPA of enrolled first-years: 4.47.",
-      "near": "Right around UNC's average. Now your top-tier rows decide it: classes, essays, letters, activities.",
+      "near": "Right around UNC's average. Now your top-tier rows decide it: classes, essay, letters, activities.",
       "above": "Above UNC's average. Good start. GPA is one step down here, so your top-tier rows still do the heavy lifting.",
-      "below": "Below UNC's average. That's not a no. At UNC, your classes, essays, letters and activities are all rated above GPA. Put your hours there."
+      "below": "Below UNC's average. That's not a no. At UNC, your classes, essay, letters and activities are all rated above GPA. Put your hours there."
     },
     "facts": [
       {"big": "76%", "text": "of first-years who reported a class rank were in the top 10% of their class."}
@@ -103,7 +103,7 @@
     "title": "4 moves, all aimed at UNC's top tier.",
     "items": [
       {"title": "List your hardest classes.", "body": "Honors, AP, IB, dual enrollment. Make sure every one shows up on your application."},
-      {"title": "Read each essay out loud.", "body": "If a sentence could be about anyone, cut it. Essays are top-tier here."},
+      {"title": "Read your essay out loud.", "body": "If a sentence could be about anyone, cut it. It's the only essay UNC asks for this year, and essays are top-tier here."},
       {"title": "Put a number on every activity.", "body": "Hours a week, people you led, what changed because of you."},
       {"title": "NC students: do your residency step.", "body": "It's separate from the Common App and due Feb 21. Residency is top-tier at UNC, so do it the week you apply. Easy to miss.", "quirk": true}
     ],
@@ -114,8 +114,8 @@
     "kicker": "The reader's check",
     "title": {"s": "Is your essay doing its job?", "p": "Is your student's essay doing its job?"},
     "lede": {
-      "s": "Essays are top-tier at UNC. Here's what I looked for as an admissions reader. Read your Common App essay and any UNC short answers, then tap what's true.",
-      "p": "Essays are top-tier at UNC. Here's what I looked for as an admissions reader. Read your student's Common App essay and any UNC short answers together, then tap what's true."
+      "s": "Essays are top-tier at UNC, and this year your Common App essay is the only one it asks for. Here's what I looked for as an admissions reader. Read your essay, then tap what's true.",
+      "p": "Essays are top-tier at UNC, and this year the Common App essay is the only one it asks for. Here's what I looked for as an admissions reader. Read your student's essay together, then tap what's true."
     },
     "items": [
       {"title": "It answers the exact question asked.", "body": "Circle the key words in the prompt. Every paragraph should answer them, not a question close to them."},
@@ -134,17 +134,17 @@
 
   "offer": {
     "kicker": "Before you hit submit",
-    "title": {"s": "Want a former admissions reader to read your essays?", "p": "Want a former admissions reader to read your student's essays?"},
+    "title": {"s": "Want a former admissions reader to read your essay?", "p": "Want a former admissions reader to read your student's essay?"},
     "lede": {
-      "s": "I read applications at UChicago. I'll read your UNC essays the way a reader would and show you what to fix. You do the writing. I give the feedback.",
-      "p": "I read applications at UChicago. I'll read your student's UNC essays the way a reader would and show them what to fix. Feedback only, so the writing stays theirs."
+      "s": "I read applications at UChicago. I'll read your Common App essay the way a reader would and show you what to fix. You do the writing. I give the feedback.",
+      "p": "I read applications at UChicago. I'll read your student's Common App essay the way a reader would and show them what to fix. Feedback only, so the writing stays theirs."
     },
     "cta": "DM me \"CHECK\" on Instagram →"
   },
 
   "notes": {
     "parents": "I'm applying to UNC-Chapel Hill (Regular Decision, due Jan 15). UNC says it meets 100% of need for students who qualify. Can we run their net price calculator together this week? https://nces.ed.gov/collegenavigator/?id=199120",
-    "offer": "I'm applying to UNC-Chapel Hill (due Jan 15). Ms Sweeney, a former UChicago admissions reader, gives essay feedback based on what UNC says matters most. Can we talk about it? You can message her on Instagram: @mssweeneysays"
+    "offer": "I'm applying to UNC-Chapel Hill (due Jan 15). Ms Sweeney, a former UChicago admissions reader, gives essay feedback based on what UNC says matters most. Can we talk about it? You can DM her the word CHECK on Instagram: @mssweeneysays"
   },
 
   "footer_source": "Source: UNC-Chapel Hill 2025–26 Common Data Set (sections C1, C7, C9–C12, G1, H2) and UNC Admissions deadlines. Check UNC's site for anything that changes."
