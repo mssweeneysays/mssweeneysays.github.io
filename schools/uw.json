@@ -1,0 +1,149 @@
+{
+  "slug": "uw",
+  "status": "draft",
+  "review_note": "Draft for Amanda's review. Numbers to check against the printed CDS before this goes in any DM.",
+  "name": "University of Washington",
+  "short": "UW",
+  "cds_year": "2025–26",
+  "updated": "2026-11-06",
+
+  "preview": {
+    "title": "UW Seattle, decoded on one page",
+    "description": "What UW says matters most, where admitted students landed, and 4 moves to make before Nov 15. Straight from UW's own Common Data Set.",
+    "image_line": "4 things are top-tier. Your essay is one of them.",
+    "share_text": "UW Seattle's one-page application cheat sheet, straight from UW's own data."
+  },
+  "library": {
+    "blurb": "4 top-tier factors. About 4 in 10 got in.",
+    "deadline_text": "Due Nov 15"
+  },
+
+  "hero": {
+    "headline": {"s": "your one-page application check", "p": "your student's one-page application check"},
+    "sub": "Straight from the University of Washington's own 2025–26 Common Data Set."
+  },
+  "deadline": {"date": "2026-11-15", "display": "Nov 15", "label": "UW application deadline"},
+
+  "chances": {
+    "kicker": "Your chances",
+    "title": "About 4 in 10 got in, in state or not.",
+    "lede": {
+      "s": "72,933 students applied for fall 2025. 30,446 got in. Washington students got in only a little more often than out-of-state students, so where you live isn't the whole story. The rest of this page is.",
+      "p": "72,933 students applied for fall 2025. 30,446 got in. Washington students got in only a little more often than out-of-state students, so where your student lives isn't the whole story. The rest of this page is."
+    },
+    "grids": [
+      {"filled": 46, "big": "46", "who": "Washington students", "color": "#28C97A", "aria": "About 46 of 100 dots filled: 45.7% of Washington applicants were admitted"},
+      {"filled": 42, "big": "42", "who": "Out-of-state students", "color": "#FFD43B", "aria": "About 42 of 100 dots filled: 42.2% of out-of-state applicants were admitted"}
+    ],
+    "src": "Fall 2025 first-years (C1): Washington 6,980 of 15,260 admitted (45.7%). Out of state 18,813 of 44,619 (42.2%). International 4,653 of 13,054 (35.6%). Overall 30,446 of 72,933 (41.7%)."
+  },
+
+  "ladder": {
+    "kicker": "What UW actually cares about",
+    "title": "4 things are top-tier. Your essay is one of them.",
+    "lede": "By senior fall, your classes and GPA are mostly set. Your essay is the top-tier piece you can still change before Nov 15.",
+    "very_important": ["How hard your classes are", "Your GPA", "Your essay", "Washington residency"],
+    "important": ["Activities", "Talent", "First in your family to go to college", "Volunteering", "Work experience"],
+    "considered": ["Character"],
+    "not_considered": ["Test scores", "Class rank", "Recommendation letters", "Interview", "Family went to UW", "Your hometown or region", "Religion", "How often you toured or emailed"],
+    "note": "Top tier = where your hours go before Nov 15 ↓",
+    "src": "Section C7, first-year admission factors, 2025–26 Common Data Set."
+  },
+
+  "numbers": {
+    "kicker": "Where admitted students landed",
+    "lede": "Type your GPA on a 4.0 scale to see where it sits next to UW's first-years. This is a range, not a cutoff.",
+    "gpa": {
+      "label": {"s": "My GPA (4.0 scale)", "p": "Your student's GPA (4.0 scale)"},
+      "avg": 3.84, "min": 3.0, "max": 4.0, "ticks": ["3.0", "3.25", "3.5", "3.75", "4.0"],
+      "avg_label": "UW average 3.84",
+      "default": "Average GPA of enrolled first-years: 3.84 on a 4.0 scale.",
+      "near": "Right around UW's average. Now your top-tier rows decide it: how hard your classes were, and your essay.",
+      "above": "Above UW's average. Good start. Your classes and your essay still do the heavy lifting.",
+      "below": "Below UW's average. That's not a no. Your essay is top-tier too, and it's the piece you can still change. Put your hours there."
+    },
+    "facts": [
+      {"big": "76%", "text": "of enrolled first-years had a GPA of 3.75 or higher (18% had a 4.0)."}
+    ],
+    "tests_intro": "",
+    "tests": [],
+    "src": "Sections C11–C12: enrolled first-years, fall 2025 (99.9% reported a GPA). UW rates test scores and class rank \"not considered\" (C7)."
+  },
+
+  "dates": {
+    "title": "One deadline. No early round at UW.",
+    "items": [
+      {"d": "Nov 15", "now": true, "html": "<b>Application</b> due, including your essay and self-reported courses and grades."},
+      {"d": "Feb 28", "html": "Financial aid priority date (FAFSA or WASFA)."},
+      {"d": "Mar 1–15", "html": "Decisions out."},
+      {"d": "May 1", "html": "Deadline to say yes."}
+    ],
+    "src": "UW dates and deadlines (admit.washington.edu/apply/dates-deadlines), checked Nov 5, 2026."
+  },
+
+  "money": {
+    "kicker": {"s": "Send this part to your parents", "p": "The money part"},
+    "title": "If you qualify for aid, UW meets about 74% of need on average.",
+    "lede": "The sticker price isn't your price. The net price calculator gives your family a real estimate in about 15 minutes.",
+    "need_met": 74,
+    "costs": [
+      {"label": "Tuition + fees, Washington", "amount": 13406},
+      {"label": "Tuition + fees, out of state", "amount": 44640}
+    ],
+    "aid_line": "About 1 in 3 first-years get need-based grants. The average need-based package is <b>$22,538</b> a year.",
+    "npc_url": "https://nces.ed.gov/collegenavigator/?id=236948",
+    "npc_label": "Find UW's net price calculator →",
+    "src": "Sections G1 (2026–27 tuition and required fees) and H2, 2025–26 Common Data Set. On-campus food and housing (about $18,405) cost extra."
+  },
+
+  "todo": {
+    "kicker": {"s": "Do this tonight", "p": "Do this together tonight"},
+    "title": "4 moves, all aimed at UW's top tier.",
+    "items": [
+      {"title": "Read your essay out loud.", "body": "UW uses your Common App essay, and essays are top-tier here. If a sentence could be about anyone, cut it."},
+      {"title": "Check your courses against your transcript.", "body": "UW has you type in every class and grade yourself. Match it line by line. Your classes and GPA are top-tier.", "quirk": true},
+      {"title": "Pick your first-choice major on purpose.", "body": "If your major admits students directly, it has to be your first choice to count. Add a second choice too.", "quirk": true},
+      {"title": "Put a number on every activity.", "body": "Hours a week, people you led, what changed because of you."}
+    ],
+    "done": "All 4 done. That's a real application. ✓"
+  },
+
+  "self_check": {
+    "kicker": "The reader's check",
+    "title": {"s": "Is your essay doing its job?", "p": "Is your student's essay doing its job?"},
+    "lede": {
+      "s": "Your essay is top-tier at UW, and it's the only essay UW asks for. Here's what I looked for as an admissions reader. Read your essay, then tap what's true.",
+      "p": "The essay is top-tier at UW, and it's the only essay UW asks for. Here's what I looked for as an admissions reader. Read your student's essay together, then tap what's true."
+    },
+    "items": [
+      {"title": "It answers the exact question asked.", "body": "Circle the key words in the prompt. Every paragraph should answer them, not a question close to them."},
+      {"title": "Only one person could have written it.", "body": "Swap in a friend's name. If it still works, it isn't specific enough yet."},
+      {"title": "It shows one real moment.", "body": "A scene beats a list of awards. The list already lives in the activities section."},
+      {"title": "A reader could sum it up in one line.", "body": "Readers spend a few minutes per file. Hand them the sentence they'll repeat when they argue for you."}
+    ],
+    "after": {"s": "Not sure you can check all four? That's normal. It's hard to judge your own essay.", "p": "Not sure? That's normal. It's hard to judge an essay you're close to."},
+    "all_done": "All 4. Nice work. A fresh reader can still catch what you can't see."
+  },
+
+  "take": {
+    "heading": "What I saw as an admissions reader",
+    "quote": "When three out of four first-years have a 3.75 or higher, grades stop telling readers apart. Your essay is where a reader finally meets you, and at UW it's the only one. Make it one real moment that only you could write."
+  },
+
+  "offer": {
+    "kicker": "Before you hit submit",
+    "title": {"s": "Want a former admissions reader to read your essay this week?", "p": "Want a former admissions reader to read your student's essay this week?"},
+    "lede": {
+      "s": "I read applications at UChicago. I'll read your Common App essay the way a reader would and rank what to fix first, back in 48 hours so you can revise before Nov 15. Only 3 spots. You do the writing. I give the feedback.",
+      "p": "I read applications at UChicago. I'll read your student's Common App essay the way a reader would and rank what to fix first, back in 48 hours so they can revise before Nov 15. Only 3 spots. Feedback only, so the writing stays theirs."
+    },
+    "cta": "DM me \"UDUB\" on Instagram →"
+  },
+
+  "notes": {
+    "parents": "I'm applying to UW Seattle (due Nov 15). UW meets about 74% of need on average for students who qualify. Can we run the net price calculator together this week? https://nces.ed.gov/collegenavigator/?id=236948",
+    "offer": "I'm applying to UW Seattle (due Nov 15). Ms Sweeney, a former UChicago admissions reader, gives feedback on the Common App essay with 48-hour turnaround. Only 3 spots. Can we talk about it? You can DM her the word UDUB on Instagram: @mssweeneysays"
+  },
+
+  "footer_source": "Source: University of Washington 2025–26 Common Data Set (sections C1, C7, C11–C12, C21–C22, G1, H2) and UW Admissions. Check UW's site for anything that changes."
+}
