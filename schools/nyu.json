@@ -1,0 +1,259 @@
+{
+  "slug": "nyu",
+  "status": "draft",
+  "review_note": "Draft for Amanda's review. Numbers to check against the printed CDS before this goes in any DM.",
+  "name": "NYU",
+  "short": "NYU",
+  "cds_year": "2025–26",
+  "updated": "2026-11-06",
+  "preview": {
+    "title": "NYU, decoded on one page",
+    "description": "What NYU says matters most, where admitted students landed, and 4 moves to make before Jan 1 and Jan 5. Straight from NYU's own Common Data Set.",
+    "image_line": "Letters and character are top-tier. Activities aren't.",
+    "share_text": "NYU's one-page application cheat sheet, straight from NYU's own data."
+  },
+  "library": {
+    "blurb": "Letters and character are top-tier. About 9 in 100 got in.",
+    "deadline_text": "ED II Jan 1 · RD Jan 5"
+  },
+  "hero": {
+    "headline": {
+      "s": "your one-page application check",
+      "p": "your student's one-page application check"
+    },
+    "sub": "Straight from NYU's own 2025–26 Common Data Set."
+  },
+  "deadline": {
+    "date": "2027-01-05",
+    "display": "Jan 5",
+    "label": "Regular Decision deadline"
+  },
+  "chances": {
+    "kicker": "Your chances",
+    "title": "About 9 in 100 got in.",
+    "lede": {
+      "s": "114,125 students applied for fall 2025. 10,340 got in. That's hard, not impossible. The rest of this page is what you control.",
+      "p": "114,125 students applied for fall 2025. 10,340 got in. That's hard, not impossible. The rest of this page is what your student controls."
+    },
+    "grids": [
+      {
+        "filled": 9,
+        "big": "9",
+        "who": "All first-year applicants",
+        "color": "#FFD43B",
+        "aria": "About 9 of 100 dots filled: 9.1% of first-year applicants were admitted"
+      }
+    ],
+    "src": "Fall 2025 first-years (C1): 10,340 of 114,125 admitted (9.1%). NYU doesn't report an in-state split or its Early Decision numbers in the CDS."
+  },
+  "ladder": {
+    "kicker": "What NYU actually cares about",
+    "title": "5 things are top-tier. Two of them are about who you are, not what you did.",
+    "lede": "Your recommendation letters and your character sit right next to your grades. Activities are only \"considered.\" So the people who write about you, and how your essay sounds, matter a lot here.",
+    "very_important": [
+      "How hard your classes are",
+      "Your GPA",
+      "Essays",
+      "Recommendation letters",
+      "Character"
+    ],
+    "important": [
+      "Test scores"
+    ],
+    "considered": [
+      "Activities",
+      "Talent",
+      "First in your family to go to college",
+      "Where you live",
+      "Volunteering",
+      "Work experience",
+      "How interested you are in NYU"
+    ],
+    "not_considered": [
+      "Class rank",
+      "Interview",
+      "Family went to NYU",
+      "State residency",
+      "Religion"
+    ],
+    "note": "Top tier = where your hours go before Jan 1 or Jan 5 ↓",
+    "src": "Section C7, first-year admission factors, 2025–26 Common Data Set. Programs that need an audition or portfolio rate it very important too."
+  },
+  "numbers": {
+    "kicker": "Where admitted students landed",
+    "lede": "Type your GPA on a 4.0 scale to see where it sits next to NYU's first-years. This is a range, not a cutoff.",
+    "gpa": {
+      "label": {
+        "s": "My GPA (4.0 scale)",
+        "p": "Your student's GPA (4.0 scale)"
+      },
+      "avg": 3.81,
+      "min": 3.0,
+      "max": 4.0,
+      "ticks": [
+        "3.0",
+        "3.25",
+        "3.5",
+        "3.75",
+        "4.0"
+      ],
+      "avg_label": "NYU average 3.81",
+      "default": "Average GPA of enrolled first-years: 3.81 on a 4.0 scale.",
+      "near": "Right around NYU's average. Now your other top-tier rows decide it: your essay, your letters and your character.",
+      "above": "Above NYU's average. Good start. Your essay and letters are top-tier too, so they still do heavy lifting.",
+      "below": "Below NYU's average. That's not a no. Your essay, letters and character are all top-tier at NYU. Put your hours there."
+    },
+    "facts": [
+      {
+        "big": "72%",
+        "text": "of enrolled first-years had a GPA of 3.75 or higher (17% had a 4.0)."
+      }
+    ],
+    "tests_intro": "are \"important\" but optional. Fewer than 4 in 10 first-years sent a score. If you send one, here's the middle half:",
+    "tests": [
+      {
+        "name": "SAT",
+        "low": 1480,
+        "high": 1550,
+        "scale_min": 1200,
+        "scale_max": 1600
+      },
+      {
+        "name": "ACT",
+        "low": 34,
+        "high": 35,
+        "scale_min": 24,
+        "scale_max": 36
+      }
+    ],
+    "src": "Sections C9–C12: enrolled first-years, fall 2025 (27% sent SAT, 10% sent ACT). NYU is test-optional through the 2027–28 cycle (NYU Admissions, checked Nov 6, 2026)."
+  },
+  "dates": {
+    "title": "Early Decision I is closed. You have two rounds left.",
+    "items": [
+      {
+        "d": "Jan 1",
+        "now": true,
+        "html": "<b>Early Decision II</b> due. It's binding: if you get in, you go. Decisions Feb 15."
+      },
+      {
+        "d": "Jan 5",
+        "html": "<b>Regular Decision</b> due. Decisions Apr 1."
+      },
+      {
+        "d": "Jan 10 / Feb 1",
+        "html": "CSS Profile due for financial aid (Jan 10 for ED II, Feb 1 for RD)."
+      },
+      {
+        "d": "May 1",
+        "html": "Deadline to say yes (RD)."
+      }
+    ],
+    "src": "NYU first-year applicant and financial aid pages (nyu.edu), checked Nov 6, 2026. Reply date: Section C17, 2025–26 Common Data Set."
+  },
+  "money": {
+    "kicker": {
+      "s": "Send this part to your parents",
+      "p": "The money part"
+    },
+    "title": "If you qualify for aid, NYU meets about 100% of need for first-years.",
+    "lede": "The sticker price isn't your price. NYU says families earning under $100,000 with typical assets won't pay tuition. The net price calculator gives a real estimate in about 15 minutes.",
+    "need_met": 100,
+    "costs": [
+      {
+        "label": "Tuition + fees, most NYU schools",
+        "amount": 68576
+      },
+      {
+        "label": "Tuition + fees, Tisch (arts)",
+        "amount": 75326
+      }
+    ],
+    "aid_line": "About 1 in 4 first-years get need-based grants. First-years who got aid averaged <b>$72,963</b> a year.",
+    "npc_url": "https://nces.ed.gov/collegenavigator/?id=193900",
+    "npc_label": "Find NYU's net price calculator →",
+    "src": "Costs: NYU 2026–27 estimated cost of attendance (NYU Bulletin); NYU's 2025–26 CDS leaves out section G. Aid: Section H2 (99.8% of need met for first-years; line J average package of first-years awarded aid). Under-$100K promise: NYU cost of attendance page. Food and housing (about $26,438) cost extra."
+  },
+  "todo": {
+    "kicker": {
+      "s": "Do this tonight",
+      "p": "Do this together tonight"
+    },
+    "title": "4 moves, all aimed at NYU's top tier.",
+    "items": [
+      {
+        "title": "Decide: Early Decision II or Regular Decision.",
+        "body": "ED II (Jan 1) is binding. Only pick it if NYU is your first choice and your family has run the net price calculator."
+      },
+      {
+        "title": "Give your recommender a one-page cheat sheet.",
+        "body": "Letters are top-tier at NYU. Send 3 things you want them to know, with one example each. Check your NYU portal for exactly what it asks for."
+      },
+      {
+        "title": "Read your Common App essay out loud.",
+        "body": "Essays and character are both top-tier. If a sentence could be about anyone, cut it."
+      },
+      {
+        "title": "Answer the optional NYU essay.",
+        "quirk": true,
+        "body": "It's 250 words about being a \"bridge builder,\" and it's the only NYU-specific writing on the application. Character is top-tier here, so it's worth writing."
+      }
+    ],
+    "done": "All 4 done. That's a real application. ✓"
+  },
+  "self_check": {
+    "kicker": "The reader's check",
+    "title": {
+      "s": "Is your essay doing its job?",
+      "p": "Is your student's essay doing its job?"
+    },
+    "lede": {
+      "s": "Essays and character are both top-tier at NYU. Here's what I looked for as an admissions reader. Read your Common App essay, then tap what's true.",
+      "p": "Essays and character are both top-tier at NYU. Here's what I looked for as an admissions reader. Read your student's Common App essay together, then tap what's true."
+    },
+    "items": [
+      {
+        "title": "It answers the exact question asked.",
+        "body": "Circle the key words in the prompt. Every paragraph should answer them, not a question close to them."
+      },
+      {
+        "title": "Only one person could have written it.",
+        "body": "Swap in a friend's name. If it still works, it isn't specific enough yet."
+      },
+      {
+        "title": "It shows one real moment.",
+        "body": "A scene beats a list of awards. The list already lives in the activities section."
+      },
+      {
+        "title": "A reader could sum it up in one line.",
+        "body": "Readers spend a few minutes per file. Hand them the sentence they'll repeat when they argue for you."
+      }
+    ],
+    "after": {
+      "s": "Not sure you can check all four? That's normal. It's hard to judge your own essay.",
+      "p": "Not sure? That's normal. It's hard to judge an essay you're close to."
+    },
+    "all_done": "All 4. Nice work. A fresh reader can still catch what you can't see."
+  },
+  "take": {
+    "heading": "What I saw as an admissions reader",
+    "quote": "At NYU, your letters and your character are rated as high as your grades. So your essay and your recommender should describe the same person. Pick one quality you want a reader to remember, and make sure both show it."
+  },
+  "offer": {
+    "kicker": "Before you hit submit",
+    "title": {
+      "s": "Want a former admissions reader to read your essay?",
+      "p": "Want a former admissions reader to read your student's essay?"
+    },
+    "lede": {
+      "s": "I read applications at UChicago. I'll read your Common App essay the way a reader would and rank what to fix first. You do the writing. I give the feedback.",
+      "p": "I read applications at UChicago. I'll read your student's Common App essay the way a reader would and rank what to fix first. Feedback only, so the writing stays theirs."
+    },
+    "cta": "DM me \"VIOLET\" on Instagram →"
+  },
+  "notes": {
+    "parents": "I'm applying to NYU (Early Decision II is due Jan 1, Regular Decision Jan 5). NYU says it meets 100% of need for first-years who qualify, and families under $100,000 with typical assets don't pay tuition. Can we run the net price calculator together this week? https://nces.ed.gov/collegenavigator/?id=193900",
+    "offer": "I'm applying to NYU (due Jan 1 or Jan 5). Ms Sweeney, a former UChicago admissions reader, gives essay feedback based on what NYU says matters most. Can we talk about it? You can DM her the word VIOLET on Instagram: @mssweeneysays"
+  },
+  "footer_source": "Source: NYU 2025–26 Common Data Set (sections C1, C7, C8, C9–C12, C17, H2), NYU Admissions, NYU Financial Aid and the NYU Bulletin. Check NYU's site for anything that changes."
+}

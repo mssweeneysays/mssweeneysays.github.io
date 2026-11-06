@@ -1,0 +1,251 @@
+{
+  "slug": "uci",
+  "status": "draft",
+  "review_note": "Draft for Amanda's review. Numbers to check against the printed CDS before this goes in any DM.",
+  "name": "UC Irvine",
+  "short": "UCI",
+  "cds_year": "2025–26",
+  "updated": "2026-11-06",
+  "preview": {
+    "title": "UC Irvine, decoded on one page",
+    "description": "What UC Irvine says matters most, where admitted students landed, and 4 moves to make before Nov 30. Straight from UCI's own Common Data Set.",
+    "image_line": "7 things are top-tier. Your job is one of them.",
+    "share_text": "UC Irvine's one-page application cheat sheet, straight from UCI's own data."
+  },
+  "library": {
+    "blurb": "7 top-tier factors, including work. About 29 in 100 got in.",
+    "deadline_text": "Due Nov 30"
+  },
+  "hero": {
+    "headline": {
+      "s": "your one-page application check",
+      "p": "your student's one-page application check"
+    },
+    "sub": "Straight from UC Irvine's own 2025–26 Common Data Set."
+  },
+  "deadline": {
+    "date": "2026-11-30",
+    "display": "Nov 30",
+    "label": "UC application deadline"
+  },
+  "chances": {
+    "kicker": "Your chances",
+    "title": "About 29 in 100 got in. Where you live changed the odds.",
+    "lede": {
+      "s": "124,231 students applied for fall 2025. 35,964 got in. Californians got in at about 22 in 100. Out-of-state students got in at about 48 in 100. Those are different pools, so it's not a shortcut. The rest of this page is what you control.",
+      "p": "124,231 students applied for fall 2025. 35,964 got in. Californians got in at about 22 in 100. Out-of-state students got in at about 48 in 100. Those are different pools, so it's not a shortcut. The rest of this page is what your student controls."
+    },
+    "grids": [
+      {
+        "filled": 22,
+        "big": "22",
+        "who": "California students",
+        "color": "#28C97A",
+        "aria": "About 22 of 100 dots filled: 21.9% of California applicants were admitted"
+      },
+      {
+        "filled": 48,
+        "big": "48",
+        "who": "Out-of-state students",
+        "color": "#FFD43B",
+        "aria": "About 48 of 100 dots filled: 47.5% of out-of-state applicants were admitted"
+      }
+    ],
+    "src": "Fall 2025 first-years (C1): California 18,922 of 86,230 admitted (21.9%). Out of state 7,784 of 16,381 (47.5%). International 9,258 of 21,620 (42.8%). Overall 35,964 of 124,231 (28.9%)."
+  },
+  "ladder": {
+    "kicker": "What UC Irvine actually cares about",
+    "title": "7 things are top-tier, and work experience is one of them.",
+    "lede": "Your classes and GPA are mostly set by senior fall. The other top-tier rows aren't. Your essays, which UC calls Personal Insight Questions (PIQs), are where your activities, job and volunteering get explained.",
+    "very_important": [
+      "How hard your classes are",
+      "Your GPA",
+      "Your essays (PIQs)",
+      "Activities",
+      "Talent",
+      "Volunteering",
+      "Work experience"
+    ],
+    "important": [
+      "Character"
+    ],
+    "considered": [
+      "First in your family to go to college",
+      "Where you live",
+      "California residency"
+    ],
+    "not_considered": [
+      "Test scores",
+      "Class rank",
+      "Recommendation letters",
+      "Interview",
+      "Family went to UCI",
+      "Religion",
+      "How often you toured or emailed"
+    ],
+    "note": "Top tier = where your hours go before Nov 30 ↓",
+    "src": "Section C7, first-year admission factors, 2025–26 Common Data Set."
+  },
+  "numbers": {
+    "kicker": "Where admitted students landed",
+    "lede": "Type your UC GPA (the weighted one UC calculates) to see where it sits next to UCI's admitted first-years. This is a range, not a cutoff.",
+    "gpa": {
+      "label": {
+        "s": "My UC GPA (weighted)",
+        "p": "Your student's UC GPA (weighted)"
+      },
+      "avg": 4.19,
+      "min": 3.5,
+      "max": 4.5,
+      "ticks": [
+        "3.5",
+        "3.75",
+        "4.0",
+        "4.25",
+        "4.5"
+      ],
+      "avg_label": "UCI middle 4.19",
+      "default": "The middle admitted first-year had a 4.19 weighted GPA.",
+      "near": "Right around UCI's middle. Now the rest of the top tier decides it: your PIQs, activities, work and volunteering.",
+      "above": "Above UCI's middle. Good start. UCI has 7 top-tier rows, so your PIQs and activities still do heavy lifting.",
+      "below": "Below UCI's middle. That's not a no. UCI rates activities, work and volunteering as high as GPA. Show them in your PIQs."
+    },
+    "facts": [
+      {
+        "big": "4.04–4.27",
+        "text": "was the middle half of admitted first-years' weighted GPAs (unweighted middle: 3.95)."
+      }
+    ],
+    "tests_intro": "",
+    "tests": [],
+    "src": "UC Irvine Admissions, admitted student profile for 2025 (as of Sept 2025). UCI left the CDS GPA sections (C11–C12) blank, so these are admitted students, not enrolled. UCI doesn't use SAT/ACT scores in admission (C7)."
+  },
+  "dates": {
+    "title": "One deadline. No early round at UC Irvine.",
+    "items": [
+      {
+        "d": "Nov 30",
+        "now": true,
+        "html": "<b>UC application</b> due, including your 4 PIQs. One application covers every UC campus."
+      },
+      {
+        "d": "Mar 2",
+        "html": "Financial aid priority date (FAFSA or California Dream Act)."
+      },
+      {
+        "d": "March",
+        "html": "Decisions start going out."
+      },
+      {
+        "d": "May 1",
+        "html": "Deadline to say yes."
+      }
+    ],
+    "src": "UC dates and deadlines (admission.universityofcalifornia.edu), checked Nov 6, 2026. Decision timing: Section C16, 2025–26 Common Data Set. Reply date: UC Irvine Admissions."
+  },
+  "money": {
+    "kicker": {
+      "s": "Send this part to your parents",
+      "p": "The money part"
+    },
+    "title": "If you qualify for aid, UC Irvine meets about 86% of need on average.",
+    "lede": "The sticker price isn't your price. The net price calculator gives your family a real estimate in about 15 minutes.",
+    "need_met": 86,
+    "costs": [
+      {
+        "label": "Tuition + fees, California",
+        "amount": 20289
+      },
+      {
+        "label": "Tuition + fees, out of state",
+        "amount": 59559
+      }
+    ],
+    "aid_line": "More than 4 in 10 first-years get need-based grants. First-years who got aid averaged <b>$30,774</b> a year.",
+    "npc_url": "https://www.ofas.uci.edu/cost/net-price-calculator.php",
+    "npc_label": "Open UC Irvine's net price calculator →",
+    "src": "Costs: UC Irvine's 2026–27 budget for new undergraduates (admissions.uci.edu/afford), which includes campus fees and student health insurance; UCI left CDS G1 blank. Aid: Section H2 (85.9% of need met; line J average package of first-years awarded aid), 2025–26 Common Data Set. Housing and food cost extra."
+  },
+  "todo": {
+    "kicker": {
+      "s": "Do this tonight",
+      "p": "Do this together tonight"
+    },
+    "title": "4 moves, all aimed at UCI's top tier.",
+    "items": [
+      {
+        "title": "Put your job on the application.",
+        "body": "Babysitting, a register, the family business. Work experience is top-tier at UC Irvine. List the hours a week."
+      },
+      {
+        "title": "Read your 4 PIQs in one sitting.",
+        "body": "PIQs are top-tier here. If two tell the same story, swap one for a side of you the reader hasn't met yet."
+      },
+      {
+        "title": "Check your courses against your transcript.",
+        "body": "The UC application has you type in every class and grade yourself. Match it line by line. Your classes and GPA are top-tier."
+      },
+      {
+        "title": "Add an alternate major you'd actually take.",
+        "quirk": true,
+        "body": "UCI says students with a valid alternate major may be offered that major if their first choice is full. Computer science, engineering, biology and nursing are high-demand."
+      }
+    ],
+    "done": "All 4 done. That's a real application. ✓"
+  },
+  "self_check": {
+    "kicker": "The reader's check",
+    "title": {
+      "s": "Are your PIQs doing their job?",
+      "p": "Are your student's PIQs doing their job?"
+    },
+    "lede": {
+      "s": "PIQs are top-tier at UC Irvine. Here's what I looked for as an admissions reader. Read all 4 of your PIQs together, then tap what's true.",
+      "p": "PIQs are top-tier at UC Irvine. Here's what I looked for as an admissions reader. Read all 4 of your student's PIQs together, then tap what's true."
+    },
+    "items": [
+      {
+        "title": "Each one answers the exact question asked.",
+        "body": "Circle the key words in the question. Every paragraph should answer them, not a question close to them."
+      },
+      {
+        "title": "Only you could have written it.",
+        "body": "Swap in a friend's name. If it still works, it isn't specific enough yet."
+      },
+      {
+        "title": "It shows what you did.",
+        "body": "Your role, your steps, what changed. Not just what the team or club did."
+      },
+      {
+        "title": "The 4 show 4 different sides of you.",
+        "body": "If two PIQs tell the same story, swap one for a side of you the reader hasn't met yet."
+      }
+    ],
+    "after": {
+      "s": "Not sure you can check all four? That's normal. It's hard to judge your own writing.",
+      "p": "Not sure? That's normal. It's hard to judge writing you're close to."
+    },
+    "all_done": "All 4. Nice work. A fresh reader can still catch what you can't see."
+  },
+  "take": {
+    "heading": "What I saw as an admissions reader",
+    "quote": "A job counts here. UC Irvine rates work and volunteering as high as your GPA. If you work a shift every weekend, that's not a gap in your activities. That's a PIQ. Tell the reader what you learned doing it."
+  },
+  "offer": {
+    "kicker": "Before you hit submit",
+    "title": {
+      "s": "Want a former admissions reader to read your 4 PIQs?",
+      "p": "Want a former admissions reader to read your student's 4 PIQs?"
+    },
+    "lede": {
+      "s": "I read applications at UChicago. I'll read all 4 of your PIQs together the way a reader would and rank what to fix first. You do the writing. I give the feedback. One read covers every UC you apply to.",
+      "p": "I read applications at UChicago. I'll read all 4 of your student's PIQs together the way a reader would and rank what to fix first. Feedback only, so the writing stays theirs. One read covers every UC they apply to."
+    },
+    "cta": "DM me \"PIQ\" on Instagram →"
+  },
+  "notes": {
+    "parents": "I'm applying to UC Irvine (UC application due Nov 30). UCI meets about 86% of need on average for students who qualify. Can we run the net price calculator together this week? https://www.ofas.uci.edu/cost/net-price-calculator.php",
+    "offer": "I'm applying to UC Irvine (UC application due Nov 30). Ms Sweeney, a former UChicago admissions reader, gives feedback on all 4 UC essays (Personal Insight Questions, or PIQs) together. Can we talk about it? You can DM her the word PIQ on Instagram: @mssweeneysays"
+  },
+  "footer_source": "Source: UC Irvine 2025–26 Common Data Set (sections C1, C7, C16, H2), UC Irvine Admissions (2025 admitted profile, 2026–27 budget), UC Admissions. Check UC's site for anything that changes."
+}

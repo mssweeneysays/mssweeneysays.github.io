@@ -1,0 +1,251 @@
+{
+  "slug": "ucdavis",
+  "status": "draft",
+  "review_note": "Draft for Amanda's review. Numbers to check against the printed CDS before this goes in any DM.",
+  "name": "UC Davis",
+  "short": "UC Davis",
+  "cds_year": "2025–26",
+  "updated": "2026-11-06",
+  "preview": {
+    "title": "UC Davis, decoded on one page",
+    "description": "What UC Davis says matters most, where admitted students landed, and 4 moves to make before Nov 30. Straight from UC Davis's own Common Data Set.",
+    "image_line": "Only 2 things are top-tier: your classes and your GPA.",
+    "share_text": "UC Davis's one-page application cheat sheet, straight from UC Davis's own data."
+  },
+  "library": {
+    "blurb": "Only 2 top-tier factors. About 44 in 100 got in.",
+    "deadline_text": "Due Nov 30"
+  },
+  "hero": {
+    "headline": {
+      "s": "your one-page application check",
+      "p": "your student's one-page application check"
+    },
+    "sub": "Straight from UC Davis's own 2025–26 Common Data Set."
+  },
+  "deadline": {
+    "date": "2026-11-30",
+    "display": "Nov 30",
+    "label": "UC application deadline"
+  },
+  "chances": {
+    "kicker": "Your chances",
+    "title": "About 44 in 100 got in. Where you live changed the odds.",
+    "lede": {
+      "s": "102,988 students applied for fall 2025. 45,674 got in. Californians got in at about 37 in 100. Out-of-state students got in at about 63 in 100. Those are different pools, so it's not a shortcut. The rest of this page is what you control.",
+      "p": "102,988 students applied for fall 2025. 45,674 got in. Californians got in at about 37 in 100. Out-of-state students got in at about 63 in 100. Those are different pools, so it's not a shortcut. The rest of this page is what your student controls."
+    },
+    "grids": [
+      {
+        "filled": 37,
+        "big": "37",
+        "who": "California students",
+        "color": "#28C97A",
+        "aria": "About 37 of 100 dots filled: 37.1% of California applicants were admitted"
+      },
+      {
+        "filled": 63,
+        "big": "63",
+        "who": "Out-of-state students",
+        "color": "#FFD43B",
+        "aria": "About 63 of 100 dots filled: 63.2% of out-of-state applicants were admitted"
+      }
+    ],
+    "src": "Fall 2025 first-years (C1): California 25,473 of 68,593 admitted (37.1%). Out of state 8,315 of 13,149 (63.2%). International 11,886 of 21,246 (55.9%). Overall 45,674 of 102,988 (44.3%)."
+  },
+  "ladder": {
+    "kicker": "What UC Davis actually cares about",
+    "title": "Only 2 things are top-tier: your classes and your GPA.",
+    "lede": "By senior fall, those are mostly set. Your essays, which UC calls Personal Insight Questions (PIQs), sit one step down with activities and volunteering. They're the biggest piece you can still change before Nov 30.",
+    "very_important": [
+      "How hard your classes are",
+      "Your GPA"
+    ],
+    "important": [
+      "Your essays (PIQs)",
+      "Activities",
+      "Talent",
+      "Character",
+      "Volunteering"
+    ],
+    "considered": [
+      "First in your family to go to college",
+      "Where you live",
+      "California residency",
+      "Work experience"
+    ],
+    "not_considered": [
+      "Test scores",
+      "Class rank",
+      "Recommendation letters",
+      "Interview",
+      "Family went to UC Davis",
+      "Religion",
+      "How often you toured or emailed"
+    ],
+    "note": "Second tier = where your hours go before Nov 30 ↓",
+    "src": "Section C7, first-year admission factors, 2025–26 Common Data Set."
+  },
+  "numbers": {
+    "kicker": "Where admitted students landed",
+    "lede": "Type your UC GPA (the weighted one UC calculates) to see where it sits next to UC Davis's first-years. This is a range, not a cutoff.",
+    "gpa": {
+      "label": {
+        "s": "My UC GPA (weighted)",
+        "p": "Your student's UC GPA (weighted)"
+      },
+      "avg": 4.03,
+      "min": 3.5,
+      "max": 4.5,
+      "ticks": [
+        "3.5",
+        "3.75",
+        "4.0",
+        "4.25",
+        "4.5"
+      ],
+      "avg_label": "UC Davis average 4.03",
+      "default": "Average GPA of enrolled first-years: 4.03.",
+      "near": "Right around UC Davis's average. Your classes and GPA are the top tier, so you're in the conversation. Now your PIQs and activities make the case.",
+      "above": "Above UC Davis's average. Good start. Your PIQs and activities are the next tier, so make them count.",
+      "below": "Below UC Davis's average. That's not a no. Your PIQs and activities are the next tier down, and they're what you can still change. Put your hours there."
+    },
+    "facts": [
+      {
+        "big": "66%",
+        "text": "of enrolled first-years reported a GPA of 4.0 or higher."
+      }
+    ],
+    "tests_intro": "",
+    "tests": [],
+    "src": "Sections C11–C12: enrolled first-years, fall 2025 (100% reported a GPA). The CDS reports an average above 4.0, so it's a weighted GPA. UC Davis doesn't use SAT/ACT scores in admission (C7, C8)."
+  },
+  "dates": {
+    "title": "One deadline. No early round at UC Davis.",
+    "items": [
+      {
+        "d": "Nov 30",
+        "now": true,
+        "html": "<b>UC application</b> due, including your 4 PIQs. One application covers every UC campus."
+      },
+      {
+        "d": "Mar 2",
+        "html": "Financial aid priority date (FAFSA or California Dream Act)."
+      },
+      {
+        "d": "By Mar 31",
+        "html": "Decisions out."
+      },
+      {
+        "d": "May 1",
+        "html": "Deadline to say yes."
+      }
+    ],
+    "src": "UC dates and deadlines (admission.universityofcalifornia.edu), checked Nov 6, 2026. Decision and reply dates: Sections C16–C17, 2025–26 Common Data Set."
+  },
+  "money": {
+    "kicker": {
+      "s": "Send this part to your parents",
+      "p": "The money part"
+    },
+    "title": "If you qualify for aid, UC Davis meets about 82% of need on average.",
+    "lede": "The sticker price isn't your price. The net price calculator gives your family a real estimate in about 15 minutes.",
+    "need_met": 82,
+    "costs": [
+      {
+        "label": "Tuition + fees, California",
+        "amount": 18000
+      },
+      {
+        "label": "Tuition + fees, out of state",
+        "amount": 57270
+      }
+    ],
+    "aid_line": "Just over half of first-years get need-based grants. First-years who got aid averaged <b>$32,557</b> a year.",
+    "npc_url": "https://nces.ed.gov/collegenavigator/?id=110644",
+    "npc_label": "Find UC Davis's net price calculator →",
+    "src": "Sections G1 (2026–27 first-year tuition and required fees) and H2 (81.7% of need met; line J average package of first-years awarded aid), 2025–26 Common Data Set. On-campus food and housing (about $22,125) cost extra."
+  },
+  "todo": {
+    "kicker": {
+      "s": "Do this tonight",
+      "p": "Do this together tonight"
+    },
+    "title": "4 moves, aimed at what UC Davis rates highest.",
+    "items": [
+      {
+        "title": "Check your courses against your transcript.",
+        "body": "The UC application has you type in every class and grade yourself. Match it line by line. Your classes and GPA are UC Davis's whole top tier, so one typo matters."
+      },
+      {
+        "title": "Read your 4 PIQs in one sitting.",
+        "body": "PIQs are the next tier here, right next to activities. If two tell the same story, swap one for a side of you the reader hasn't met yet."
+      },
+      {
+        "title": "Put a number on every activity.",
+        "body": "Hours a week, people you led, what changed because of you. Activities and volunteering sit right next to your PIQs at UC Davis."
+      },
+      {
+        "title": "Engineering? Pick the exact major.",
+        "quirk": true,
+        "body": "UC Davis's College of Engineering has no undeclared option. You apply to one specific engineering major, so choose it on purpose."
+      }
+    ],
+    "done": "All 4 done. That's a real application. ✓"
+  },
+  "self_check": {
+    "kicker": "The reader's check",
+    "title": {
+      "s": "Are your PIQs doing their job?",
+      "p": "Are your student's PIQs doing their job?"
+    },
+    "lede": {
+      "s": "PIQs are one step below the top tier at UC Davis, and they're the biggest piece you can still change. Here's what I looked for as an admissions reader. Read all 4 of your PIQs together, then tap what's true.",
+      "p": "PIQs are one step below the top tier at UC Davis, and they're the biggest piece your student can still change. Here's what I looked for as an admissions reader. Read all 4 of your student's PIQs together, then tap what's true."
+    },
+    "items": [
+      {
+        "title": "Each one answers the exact question asked.",
+        "body": "Circle the key words in the question. Every paragraph should answer them, not a question close to them."
+      },
+      {
+        "title": "Only you could have written it.",
+        "body": "Swap in a friend's name. If it still works, it isn't specific enough yet."
+      },
+      {
+        "title": "It shows what you did.",
+        "body": "Your role, your steps, what changed. Not just what the team or club did."
+      },
+      {
+        "title": "The 4 show 4 different sides of you.",
+        "body": "If two PIQs tell the same story, swap one for a side of you the reader hasn't met yet."
+      }
+    ],
+    "after": {
+      "s": "Not sure you can check all four? That's normal. It's hard to judge your own writing.",
+      "p": "Not sure? That's normal. It's hard to judge writing you're close to."
+    },
+    "all_done": "All 4. Nice work. A fresh reader can still catch what you can't see."
+  },
+  "take": {
+    "heading": "What I saw as an admissions reader",
+    "quote": "At UC Davis, the top tier is your transcript, and by now it's mostly written. So your PIQs carry the rest. Use them to explain what your grades can't: what you did, why it mattered and what changed because of you."
+  },
+  "offer": {
+    "kicker": "Before you hit submit",
+    "title": {
+      "s": "Want a former admissions reader to read your 4 PIQs?",
+      "p": "Want a former admissions reader to read your student's 4 PIQs?"
+    },
+    "lede": {
+      "s": "I read applications at UChicago. I'll read all 4 of your PIQs together the way a reader would and rank what to fix first. You do the writing. I give the feedback. One read covers every UC you apply to.",
+      "p": "I read applications at UChicago. I'll read all 4 of your student's PIQs together the way a reader would and rank what to fix first. Feedback only, so the writing stays theirs. One read covers every UC they apply to."
+    },
+    "cta": "DM me \"PIQ\" on Instagram →"
+  },
+  "notes": {
+    "parents": "I'm applying to UC Davis (UC application due Nov 30). UC Davis meets about 82% of need on average for students who qualify. Can we run the net price calculator together this week? https://nces.ed.gov/collegenavigator/?id=110644",
+    "offer": "I'm applying to UC Davis (UC application due Nov 30). Ms Sweeney, a former UChicago admissions reader, gives feedback on all 4 UC essays (Personal Insight Questions, or PIQs) together. Can we talk about it? You can DM her the word PIQ on Instagram: @mssweeneysays"
+  },
+  "footer_source": "Source: UC Davis 2025–26 Common Data Set (sections C1, C7, C8, C11–C12, C16–C17, G1, H2), UC Admissions and UC Davis. Check UC's site for anything that changes."
+}

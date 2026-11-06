@@ -1,0 +1,259 @@
+{
+  "slug": "ucsb",
+  "status": "draft",
+  "review_note": "Draft for Amanda's review. Numbers to check against the printed CDS before this goes in any DM.",
+  "name": "UC Santa Barbara",
+  "short": "UCSB",
+  "cds_year": "2025–26",
+  "updated": "2026-11-06",
+  "preview": {
+    "title": "UC Santa Barbara, decoded on one page",
+    "description": "What UC Santa Barbara says matters most, where admitted students landed, and 4 moves to make before Nov 30. Straight from UCSB's own Common Data Set.",
+    "image_line": "Only 2 things are top-tier. Your PIQs are one of them.",
+    "share_text": "UC Santa Barbara's one-page application cheat sheet, straight from UCSB's own data."
+  },
+  "library": {
+    "blurb": "GPA and PIQs are the whole top tier. About 38 in 100 got in.",
+    "deadline_text": "Due Nov 30"
+  },
+  "hero": {
+    "headline": {
+      "s": "your one-page application check",
+      "p": "your student's one-page application check"
+    },
+    "sub": "Straight from UC Santa Barbara's own 2025–26 Common Data Set."
+  },
+  "deadline": {
+    "date": "2026-11-30",
+    "display": "Nov 30",
+    "label": "UC application deadline"
+  },
+  "chances": {
+    "kicker": "Your chances",
+    "title": "About 38 in 100 got in. Where you live changed the odds.",
+    "lede": {
+      "s": "110,187 students applied for fall 2025. 42,093 got in. Californians got in at about 32 in 100. Out-of-state students got in at about 55 in 100. Those are different pools, so it's not a shortcut. The rest of this page is what you control.",
+      "p": "110,187 students applied for fall 2025. 42,093 got in. Californians got in at about 32 in 100. Out-of-state students got in at about 55 in 100. Those are different pools, so it's not a shortcut. The rest of this page is what your student controls."
+    },
+    "grids": [
+      {
+        "filled": 32,
+        "big": "32",
+        "who": "California students",
+        "color": "#28C97A",
+        "aria": "About 32 of 100 dots filled: 32.1% of California applicants were admitted"
+      },
+      {
+        "filled": 55,
+        "big": "55",
+        "who": "Out-of-state students",
+        "color": "#FFD43B",
+        "aria": "About 55 of 100 dots filled: 54.5% of out-of-state applicants were admitted"
+      }
+    ],
+    "src": "Fall 2025 first-years (C1): California 23,923 of 74,486 admitted (32.1%). Out of state 9,302 of 17,067 (54.5%). International 8,868 of 18,634 (47.6%). Overall 42,093 of 110,187 (38.2%)."
+  },
+  "ladder": {
+    "kicker": "What UC Santa Barbara actually cares about",
+    "title": "Only 2 things are top-tier: your GPA and your PIQs.",
+    "lede": "Your GPA is mostly set by senior fall. Your essays, which UC calls Personal Insight Questions (PIQs), are the other half of UCSB's top tier, and you can still change them before Nov 30. Activities are only \"considered\" here.",
+    "very_important": [
+      "Your GPA",
+      "Your essays (PIQs)"
+    ],
+    "important": [
+      "How hard your classes are"
+    ],
+    "considered": [
+      "Activities",
+      "Talent",
+      "Character",
+      "First in your family to go to college",
+      "Where you live",
+      "California residency",
+      "Volunteering",
+      "Work experience"
+    ],
+    "not_considered": [
+      "Test scores",
+      "Class rank",
+      "Recommendation letters",
+      "Interview",
+      "Family went to UCSB",
+      "Religion",
+      "How often you toured or emailed"
+    ],
+    "note": "Top tier = where your hours go before Nov 30 ↓",
+    "src": "Section C7, first-year admission factors, 2025–26 Common Data Set."
+  },
+  "numbers": {
+    "kicker": "Where admitted students landed",
+    "lede": "Type your UC GPA (the weighted one UC calculates) to see where it sits next to UCSB's first-years. This is a range, not a cutoff.",
+    "gpa": {
+      "label": {
+        "s": "My UC GPA (weighted)",
+        "p": "Your student's UC GPA (weighted)"
+      },
+      "avg": 4.29,
+      "min": 3.5,
+      "max": 4.5,
+      "ticks": [
+        "3.5",
+        "3.75",
+        "4.0",
+        "4.25",
+        "4.5"
+      ],
+      "avg_label": "UCSB average 4.29",
+      "default": "Average GPA of enrolled first-years: 4.29.",
+      "near": "Right around UCSB's average. Your GPA is half of the top tier. Your PIQs are the other half.",
+      "above": "Above UCSB's average. Good start. Your PIQs are the other half of the top tier, so make them count.",
+      "below": "Below UCSB's average. That's not a no. Your PIQs are the other half of UCSB's top tier, and they're the piece you can still change. Put your hours there."
+    },
+    "facts": [
+      {
+        "big": "88%",
+        "text": "of enrolled first-years reported a GPA of 4.0 or higher."
+      }
+    ],
+    "tests_intro": "",
+    "tests": [],
+    "src": "Sections C11–C12: enrolled first-years, fall 2025 (97% reported a GPA). The CDS reports an average above 4.0, so it's a weighted GPA. UCSB doesn't use SAT/ACT scores in admission (C7)."
+  },
+  "dates": {
+    "title": "One deadline. No early round at UCSB.",
+    "items": [
+      {
+        "d": "Nov 30",
+        "now": true,
+        "html": "<b>UC application</b> due, including your 4 PIQs. One application covers every UC campus."
+      },
+      {
+        "d": "Dec 1–31",
+        "html": "Window to ask UCSB to change the major on your application."
+      },
+      {
+        "d": "Jan 5",
+        "html": "<b>College of Creative Studies</b> priority deadline for its separate application (CCS applicants only)."
+      },
+      {
+        "d": "Mar 2",
+        "html": "Financial aid priority date (FAFSA or California Dream Act)."
+      },
+      {
+        "d": "By Mar 31",
+        "html": "Decisions out."
+      },
+      {
+        "d": "May 1",
+        "html": "Deadline to say yes."
+      }
+    ],
+    "src": "UC dates and deadlines (admission.universityofcalifornia.edu), checked Nov 6, 2026. Major changes and CCS: UCSB Admissions and College of Creative Studies pages, checked Nov 6, 2026. Decision and reply dates: Sections C16–C17, 2025–26 Common Data Set."
+  },
+  "money": {
+    "kicker": {
+      "s": "Send this part to your parents",
+      "p": "The money part"
+    },
+    "title": "If you qualify for aid, UCSB meets about 82% of need on average.",
+    "lede": "The sticker price isn't your price. The net price calculator gives your family a real estimate in about 15 minutes.",
+    "need_met": 82,
+    "costs": [
+      {
+        "label": "Tuition + fees, California",
+        "amount": 17643
+      },
+      {
+        "label": "Tuition + fees, out of state",
+        "amount": 56913
+      }
+    ],
+    "aid_line": "More than 4 in 10 first-years get need-based grants. First-years who got aid averaged <b>$35,891</b> a year.",
+    "npc_url": "https://nces.ed.gov/collegenavigator/?id=110705",
+    "npc_label": "Find UCSB's net price calculator →",
+    "src": "Sections G1 (2026–27 first-year tuition and required fees) and H2 (82.4% of need met; line J average package of first-years awarded aid), 2025–26 Common Data Set. On-campus food and housing (about $23,974) cost extra."
+  },
+  "todo": {
+    "kicker": {
+      "s": "Do this tonight",
+      "p": "Do this together tonight"
+    },
+    "title": "4 moves, all aimed at UCSB's top tier.",
+    "items": [
+      {
+        "title": "Read your 4 PIQs in one sitting.",
+        "body": "PIQs are half of UCSB's top tier. If two tell the same story, swap one for a side of you the reader hasn't met yet."
+      },
+      {
+        "title": "Check your courses against your transcript.",
+        "body": "The UC application has you type in every class and grade yourself. Match it line by line. Your GPA is the other half of the top tier."
+      },
+      {
+        "title": "Pick your best 1 or 2 activities for a PIQ.",
+        "body": "Activities are only \"considered\" here. A long list won't carry you. One activity explained well in a PIQ does more."
+      },
+      {
+        "title": "Engineering or Creative Studies? Add a second major.",
+        "quirk": true,
+        "body": "Both are selective at UCSB. Creative Studies also has its own application (priority deadline Jan 5). Pick a second-choice major outside it so you're still reviewed."
+      }
+    ],
+    "done": "All 4 done. That's a real application. ✓"
+  },
+  "self_check": {
+    "kicker": "The reader's check",
+    "title": {
+      "s": "Are your PIQs doing their job?",
+      "p": "Are your student's PIQs doing their job?"
+    },
+    "lede": {
+      "s": "PIQs are top-tier at UC Santa Barbara. Here's what I looked for as an admissions reader. Read all 4 of your PIQs together, then tap what's true.",
+      "p": "PIQs are top-tier at UC Santa Barbara. Here's what I looked for as an admissions reader. Read all 4 of your student's PIQs together, then tap what's true."
+    },
+    "items": [
+      {
+        "title": "Each one answers the exact question asked.",
+        "body": "Circle the key words in the question. Every paragraph should answer them, not a question close to them."
+      },
+      {
+        "title": "Only you could have written it.",
+        "body": "Swap in a friend's name. If it still works, it isn't specific enough yet."
+      },
+      {
+        "title": "It shows what you did.",
+        "body": "Your role, your steps, what changed. Not just what the team or club did."
+      },
+      {
+        "title": "The 4 show 4 different sides of you.",
+        "body": "If two PIQs tell the same story, swap one for a side of you the reader hasn't met yet."
+      }
+    ],
+    "after": {
+      "s": "Not sure you can check all four? That's normal. It's hard to judge your own writing.",
+      "p": "Not sure? That's normal. It's hard to judge writing you're close to."
+    },
+    "all_done": "All 4. Nice work. A fresh reader can still catch what you can't see."
+  },
+  "take": {
+    "heading": "What I saw as an admissions reader",
+    "quote": "At UCSB, activities are only \"considered,\" but your PIQs are top-tier. So don't list everything you did. Pick the one or two things that changed something, and use your PIQs to show the reader how."
+  },
+  "offer": {
+    "kicker": "Before you hit submit",
+    "title": {
+      "s": "Want a former admissions reader to read your 4 PIQs?",
+      "p": "Want a former admissions reader to read your student's 4 PIQs?"
+    },
+    "lede": {
+      "s": "I read applications at UChicago. I'll read all 4 of your PIQs together the way a reader would and rank what to fix first. You do the writing. I give the feedback. One read covers every UC you apply to.",
+      "p": "I read applications at UChicago. I'll read all 4 of your student's PIQs together the way a reader would and rank what to fix first. Feedback only, so the writing stays theirs. One read covers every UC they apply to."
+    },
+    "cta": "DM me \"PIQ\" on Instagram →"
+  },
+  "notes": {
+    "parents": "I'm applying to UC Santa Barbara (UC application due Nov 30). UCSB meets about 82% of need on average for students who qualify. Can we run the net price calculator together this week? https://nces.ed.gov/collegenavigator/?id=110705",
+    "offer": "I'm applying to UC Santa Barbara (UC application due Nov 30). Ms Sweeney, a former UChicago admissions reader, gives feedback on all 4 UC essays (Personal Insight Questions, or PIQs) together. Can we talk about it? You can DM her the word PIQ on Instagram: @mssweeneysays"
+  },
+  "footer_source": "Source: UC Santa Barbara 2025–26 Common Data Set (sections C1, C7, C11–C12, C14, C16–C17, G1, H2), UC Admissions, UCSB Admissions and the College of Creative Studies. Check UC's site for anything that changes."
+}
