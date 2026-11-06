@@ -90,7 +90,7 @@
       {"label": "Tuition + fees, Washington", "amount": 13406},
       {"label": "Tuition + fees, out of state", "amount": 44640}
     ],
-    "aid_line": "About 1 in 3 first-years get need-based grants. The average need-based package is <b>$22,538</b> a year.",
+    "aid_line": "About 1 in 3 first-years get need-based grants. First-years who got aid averaged <b>$22,538</b> a year.",
     "npc_url": "https://nces.ed.gov/collegenavigator/?id=236948",
     "npc_label": "Find UW's net price calculator →",
     "src": "Sections G1 (2026–27 tuition and required fees) and H2, 2025–26 Common Data Set. On-campus food and housing (about $18,405) cost extra."
