@@ -49,6 +49,8 @@ def load_schools():
             sys.exit(f"{f.name}: status must be draft or live")
         s.setdefault("self_check", None)
         s.setdefault("todo", None)
+        s.setdefault("promise", None)  # one line under the hero: what the reader (and the walkthrough video) will get
+        s.setdefault("catch", None)    # optional: the one real surprise in this school's data. Leave out if there isn't one.
         schools.append(s)
     return schools
 

@@ -11,6 +11,15 @@ One-page college cheat sheets, live at https://mssweeneysays.github.io/
 - `assets/`: shared styles, script, fonts and headshot.
 - `build.py`: turns the above into `<slug>/index.html`, `<slug>/og.png`, `index.html`, `og.png` and the tab icons.
 
+## Sheet order (Nov 9, 2026)
+
+One sheet serves three jobs: the DM resource, the long-form screen-share walkthrough, and short-form b-roll. Scrolling top to bottom follows the script shape:
+header + `promise` line → chances → C7 ladder → Ms Sweeney's take → `catch` (optional) → where are you → dates → money → to-do → reader's check → offer → footer.
+
+- `promise`: one true sentence about what this sheet gives the reader. Drafted by Claude, reviewed by Amanda.
+- `catch`: the one real surprise in the school's data. Leave it out if there isn't one; never invent one.
+- The reader comes first: anything that only helps the video belongs in the script, not on the sheet.
+
 ## Add a school
 
 1. Copy `schools/unc.json` to `schools/<slug>.json` (the slug becomes the web address, e.g. `nyu` → `/nyu/`).

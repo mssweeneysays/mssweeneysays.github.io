@@ -194,3 +194,8 @@ footer .share{justify-self:start;margin-top:4px}
 .card p{font-size:15px;color:var(--muted)}
 .card .go{font-weight:800;color:var(--cobalt);font-size:15px}
 .ask{background:var(--paper)}
+
+/* Nov 9 2026 order: promise line, take under C7, optional catch card */
+.promise{margin-top:14px;background:rgba(255,255,255,.14);border:2px dashed rgba(255,255,255,.7);border-radius:14px;padding:10px 12px;font-weight:700;font-size:16px;line-height:1.35}
+.catch{border:2px solid var(--jade);background:#F1FBF5}
+.catch .kicker{color:#0f8a5f}

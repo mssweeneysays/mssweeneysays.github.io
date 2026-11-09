@@ -46,6 +46,9 @@
   <div class="eyebrow">Ms Sweeney Decoded</div>
   <h1><span class="hl">{{ s.name }}</span><br>{{ sp(s.hero.headline) }}</h1>
   <p class="sub">{{ s.hero.sub }}</p>
+  {%- if s.promise %}
+  <p class="promise">{{ sp(s.promise) }}</p>
+  {%- endif %}
   <div class="deadline">
     <div class="dl-box"><b>{{ s.deadline.display }}</b><span>{{ s.deadline.label }}</span></div>
     <div class="dl-box dl-days"><b id="days">—</b><span>days left</span></div>
@@ -114,6 +117,31 @@
   <p class="note">{{ s.ladder.note }}</p>
   <p class="src">{{ s.ladder.src }}</p>
 </section>
+
+<section class="take" aria-labelledby="h-take">
+  <div class="kicker">Ms Sweeney's take{{ tags('first') }}</div>
+  <div class="take-head">
+    <img src="../assets/amanda.jpg" width="84" height="84" alt="Ms Sweeney smiling, in a green top against a blue background">
+    <p><b>Ms Sweeney</b>Former UChicago admissions reader</p>
+  </div>
+  <h2 id="h-take" style="font-size:20px;margin-top:16px">{{ s.take.heading }}</h2>
+  <blockquote>{{ s.take.quote }}</blockquote>
+  <p class="sig">— Ms Sweeney</p>
+</section>
+{%- if s.catch %}
+<section id="catch" class="catch" aria-labelledby="h-catch">
+  <div class="kicker">{{ s.catch.kicker }}{{ tags('data') }}</div>
+  <h2 id="h-catch">{{ sp(s.catch.title) }}</h2>
+  <p class="lede">{{ sp(s.catch.lede) }}</p>
+  {%- if s.catch.note %}
+  <p class="note">{{ s.catch.note }}</p>
+  {%- endif %}
+  {%- if s.catch.link and s.self_check %}
+  <a class="btn tap" href="#check" style="margin-top:14px">{{ s.catch.link }}</a>
+  {%- endif %}
+  <p class="src">{{ s.catch.src }}</p>
+</section>
+{%- endif %}
 
 <section id="numbers" aria-labelledby="h-numbers">
   <div class="kicker">{{ s.numbers.kicker }}{{ tags('data') }}</div>
@@ -217,16 +245,6 @@
 </section>
 {%- endif %}
 
-<section class="take" aria-labelledby="h-take">
-  <div class="kicker">Ms Sweeney's take{{ tags('first') }}</div>
-  <div class="take-head">
-    <img src="../assets/amanda.jpg" width="84" height="84" alt="Ms Sweeney smiling, in a green top against a blue background">
-    <p><b>Ms Sweeney</b>Former UChicago admissions reader</p>
-  </div>
-  <h2 id="h-take" style="font-size:20px;margin-top:16px">{{ s.take.heading }}</h2>
-  <blockquote>{{ s.take.quote }}</blockquote>
-  <p class="sig">— Ms Sweeney</p>
-</section>
 
 <section id="offer" class="offer" aria-labelledby="h-offer">
   <div class="kicker">{{ s.offer.kicker }}</div>

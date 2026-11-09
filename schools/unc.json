@@ -6,7 +6,6 @@
   "short": "UNC",
   "cds_year": "2025–26",
   "updated": "2026-11-03",
-
   "preview": {
     "title": "UNC-Chapel Hill, decoded on one page",
     "description": "What UNC says matters most, where admitted students landed, and 4 moves to make tonight. Straight from UNC's own Common Data Set.",
@@ -17,13 +16,22 @@
     "blurb": "Essays are top-tier. NC students got in almost 4× as often.",
     "deadline_text": "RD due Jan 15"
   },
-
   "hero": {
-    "headline": {"s": "your one-page application check", "p": "your student's one-page application check"},
+    "headline": {
+      "s": "your one-page application check",
+      "p": "your student's one-page application check"
+    },
     "sub": "Straight from UNC's own 2025–26 Common Data Set."
   },
-  "deadline": {"date": "2027-01-15", "display": "Jan 15", "label": "Regular Decision deadline"},
-
+  "deadline": {
+    "date": "2027-01-15",
+    "display": "Jan 15",
+    "label": "Regular Decision deadline"
+  },
+  "promise": {
+    "s": "In 2 minutes: where you stand, the one surprise in UNC's data, and one move to make tonight.",
+    "p": "In 2 minutes: where your student stands, the one surprise in UNC's data, and one move to make tonight."
+  },
   "chances": {
     "kicker": "Your chances",
     "title": "NC students got in almost 4 times as often.",
@@ -32,29 +40,80 @@
       "p": "Living in North Carolina is one of UNC's top-tier factors. Out of state, about 1 in 10 got in. So if your student is applying from outside NC, the rest of this page is where they win."
     },
     "grids": [
-      {"filled": 37, "big": "37", "who": "North Carolina students", "color": "#28C97A", "aria": "37 of 100 dots filled: 37% of North Carolina applicants were admitted"},
-      {"filled": 10, "big": "10", "who": "Out-of-state students", "color": "#FFD43B", "aria": "About 10 of 100 dots filled: 9.6% of out-of-state applicants were admitted"}
+      {
+        "filled": 37,
+        "big": "37",
+        "who": "North Carolina students",
+        "color": "#28C97A",
+        "aria": "37 of 100 dots filled: 37% of North Carolina applicants were admitted"
+      },
+      {
+        "filled": 10,
+        "big": "10",
+        "who": "Out-of-state students",
+        "color": "#FFD43B",
+        "aria": "About 10 of 100 dots filled: 9.6% of out-of-state applicants were admitted"
+      }
     ],
     "src": "Fall 2025 first-years (C1): NC 6,605 of 17,846 admitted (37.0%). Out of state 4,685 of 48,645 (9.6%). International 1,461 of 9,756 (15.0%). Overall 12,751 of 76,247 (16.7%)."
   },
-
   "ladder": {
     "kicker": "What UNC actually cares about",
     "title": "7 things are top-tier. Your GPA is one step down.",
     "lede": "That doesn't mean grades don't matter. How hard your classes are is still top-tier. UNC wants to see the whole person.",
-    "very_important": ["How hard your classes are", "Essays", "Recommendation letters", "Activities", "Talent", "Character", "NC residency"],
-    "important": ["Your GPA", "Class rank", "Volunteering", "Work experience"],
-    "considered": ["Test scores", "First in your family to go to college", "Family went to UNC"],
-    "not_considered": ["Interview", "Your hometown or region", "Religion", "How often you toured or emailed"],
+    "very_important": [
+      "How hard your classes are",
+      "Essays",
+      "Recommendation letters",
+      "Activities",
+      "Talent",
+      "Character",
+      "NC residency"
+    ],
+    "important": [
+      "Your GPA",
+      "Class rank",
+      "Volunteering",
+      "Work experience"
+    ],
+    "considered": [
+      "Test scores",
+      "First in your family to go to college",
+      "Family went to UNC"
+    ],
+    "not_considered": [
+      "Interview",
+      "Your hometown or region",
+      "Religion",
+      "How often you toured or emailed"
+    ],
     "note": "Top tier = where your hours go before Jan 15 ↓",
     "src": "Section C7, first-year admission factors, 2025–26 Common Data Set."
   },
-
+  "catch": {
+    "kicker": "The catch",
+    "title": "One essay this year. And it's top-tier.",
+    "lede": {
+      "s": "UNC rates essays <b>very important</b>, the same tier as your hardest classes. This year your Common App essay is the only one it asks for. So one essay carries all of that weight.",
+      "p": "UNC rates essays <b>very important</b>, the same tier as your student's hardest classes. This year the Common App essay is the only one it asks for. So one essay carries all of that weight."
+    },
+    "note": "Every sentence has to earn its spot.",
+    "link": "Check your essay ↓",
+    "src": "Section C7, 2025–26 Common Data Set (essays: very important). Essay count: UNC first-year application page."
+  },
   "numbers": {
     "kicker": "Where admitted students landed",
     "lede": "Type your weighted GPA to see where it sits next to UNC's first-years. This is a range, not a cutoff.",
     "gpa": {
-      "avg": 4.47, "min": 3.5, "max": 5.0, "ticks": ["3.5", "4.0", "4.5", "5.0"],
+      "avg": 4.47,
+      "min": 3.5,
+      "max": 5.0,
+      "ticks": [
+        "3.5",
+        "4.0",
+        "4.5",
+        "5.0"
+      ],
       "avg_label": "UNC average 4.47",
       "default": "Average weighted GPA of enrolled first-years: 4.47.",
       "near": "Right around UNC's average. Now your top-tier rows decide it: classes, essay, letters, activities.",
@@ -62,90 +121,156 @@
       "below": "Below UNC's average. That's not a no. At UNC, your classes, essay, letters and activities are all rated above GPA. Put your hours there."
     },
     "facts": [
-      {"big": "76%", "text": "of first-years who reported a class rank were in the top 10% of their class."}
+      {
+        "big": "76%",
+        "text": "of first-years who reported a class rank were in the top 10% of their class."
+      }
     ],
     "tests_intro": "are only \"considered,\" and most applicants can skip them. If you send scores, here's the middle half of first-years:",
     "tests": [
-      {"name": "SAT", "low": 1400, "high": 1530, "scale_min": 1200, "scale_max": 1600},
-      {"name": "ACT", "low": 29, "high": 34, "scale_min": 24, "scale_max": 36}
+      {
+        "name": "SAT",
+        "low": 1400,
+        "high": 1530,
+        "scale_min": 1200,
+        "scale_max": 1600
+      },
+      {
+        "name": "ACT",
+        "low": 29,
+        "high": 34,
+        "scale_min": 24,
+        "scale_max": 36
+      }
     ],
     "src": "Sections C9–C12: enrolled first-years, fall 2025. GPA is weighted."
   },
-
   "dates": {
     "title": "Early Action is closed. Regular Decision is your round.",
     "items": [
-      {"d": "Jan 15", "now": true, "html": "<b>Application + fee</b> due."},
-      {"d": "Feb 21", "html": "<b>NC residency step</b>, supporting materials and test scores due."},
-      {"d": "Mar 1", "html": "Financial aid forms (FAFSA and CSS Profile) due."},
-      {"d": "Mar 31", "html": "Decisions out."}
+      {
+        "d": "Jan 15",
+        "now": true,
+        "html": "<b>Application + fee</b> due."
+      },
+      {
+        "d": "Feb 21",
+        "html": "<b>NC residency step</b>, supporting materials and test scores due."
+      },
+      {
+        "d": "Mar 1",
+        "html": "Financial aid forms (FAFSA and CSS Profile) due."
+      },
+      {
+        "d": "Mar 31",
+        "html": "Decisions out."
+      }
     ],
     "src": "UNC Admissions first-year deadlines (admissions.unc.edu), checked Nov 3, 2026."
   },
-
   "money": {
-    "kicker": {"s": "Send this part to your parents", "p": "The money part"},
+    "kicker": {
+      "s": "Send this part to your parents",
+      "p": "The money part"
+    },
     "title": "If you qualify for aid, UNC says it covers all of your need.",
     "lede": "The sticker price isn't your price. The net price calculator gives your family a real estimate in about 15 minutes.",
     "need_met": 100,
     "costs": [
-      {"label": "Tuition + fees, NC", "amount": 9359},
-      {"label": "Tuition + fees, out of state", "amount": 49601}
+      {
+        "label": "Tuition + fees, NC",
+        "amount": 9359
+      },
+      {
+        "label": "Tuition + fees, out of state",
+        "amount": 49601
+      }
     ],
     "aid_line": "About 3 in 10 first-years get need-based grants. The average need-based package is <b>$21,695</b> a year.",
     "npc_url": "https://nces.ed.gov/collegenavigator/?id=199120",
     "npc_label": "Find UNC's net price calculator →",
     "src": "Sections G1 and H2, 2025–26 Common Data Set. Tuition and required fees only; housing and food cost extra."
   },
-
   "todo": {
-    "kicker": {"s": "Do this tonight", "p": "Do this together tonight"},
+    "kicker": {
+      "s": "Do this tonight",
+      "p": "Do this together tonight"
+    },
     "title": "4 moves, all aimed at UNC's top tier.",
     "items": [
-      {"title": "List your hardest classes.", "body": "Honors, AP, IB, dual enrollment. Make sure every one shows up on your application."},
-      {"title": "Read your essay out loud.", "body": "If a sentence could be about anyone, cut it. It's the only essay UNC asks for this year, and essays are top-tier here."},
-      {"title": "Put a number on every activity.", "body": "Hours a week, people you led, what changed because of you."},
-      {"title": "NC students: do your residency step.", "body": "It's separate from the Common App and due Feb 21. Residency is top-tier at UNC, so do it the week you apply. Easy to miss.", "quirk": true}
+      {
+        "title": "List your hardest classes.",
+        "body": "Honors, AP, IB, dual enrollment. Make sure every one shows up on your application."
+      },
+      {
+        "title": "Read your essay out loud.",
+        "body": "If a sentence could be about anyone, cut it. It's the only essay UNC asks for this year, and essays are top-tier here."
+      },
+      {
+        "title": "Put a number on every activity.",
+        "body": "Hours a week, people you led, what changed because of you."
+      },
+      {
+        "title": "NC students: do your residency step.",
+        "body": "It's separate from the Common App and due Feb 21. Residency is top-tier at UNC, so do it the week you apply. Easy to miss.",
+        "quirk": true
+      }
     ],
     "done": "All 4 done. That's a real application. ✓"
   },
-
   "self_check": {
     "kicker": "The reader's check",
-    "title": {"s": "Is your essay doing its job?", "p": "Is your student's essay doing its job?"},
+    "title": {
+      "s": "Is your essay doing its job?",
+      "p": "Is your student's essay doing its job?"
+    },
     "lede": {
       "s": "Essays are top-tier at UNC, and this year your Common App essay is the only one it asks for. Here's what I looked for as an admissions reader. Read your essay, then tap what's true.",
       "p": "Essays are top-tier at UNC, and this year the Common App essay is the only one it asks for. Here's what I looked for as an admissions reader. Read your student's essay together, then tap what's true."
     },
     "items": [
-      {"title": "It answers the exact question asked.", "body": "Circle the key words in the prompt. Every paragraph should answer them, not a question close to them."},
-      {"title": "Only one person could have written it.", "body": "Swap in a friend's name. If it still works, it isn't specific enough yet."},
-      {"title": "It shows one real moment.", "body": "A scene beats a list of awards. The list already lives in the activities section."},
-      {"title": "A reader could sum it up in one line.", "body": "Readers spend a few minutes per file. Hand them the sentence they'll repeat when they argue for you."}
+      {
+        "title": "It answers the exact question asked.",
+        "body": "Circle the key words in the prompt. Every paragraph should answer them, not a question close to them."
+      },
+      {
+        "title": "Only one person could have written it.",
+        "body": "Swap in a friend's name. If it still works, it isn't specific enough yet."
+      },
+      {
+        "title": "It shows one real moment.",
+        "body": "A scene beats a list of awards. The list already lives in the activities section."
+      },
+      {
+        "title": "A reader could sum it up in one line.",
+        "body": "Readers spend a few minutes per file. Hand them the sentence they'll repeat when they argue for you."
+      }
     ],
-    "after": {"s": "Not sure you can check all four? That's normal. It's hard to judge your own essay.", "p": "Not sure? That's normal. It's hard to judge an essay you're close to."},
+    "after": {
+      "s": "Not sure you can check all four? That's normal. It's hard to judge your own essay.",
+      "p": "Not sure? That's normal. It's hard to judge an essay you're close to."
+    },
     "all_done": "All 4. Nice work. A fresh reader can still catch what you can't see."
   },
-
   "take": {
     "heading": "What I saw as an admissions reader",
     "quote": "Your essay's job is to make one reader fight for you. At UNC, your essays, letters and activities are all top-tier. Give that reader three places to find the same person."
   },
-
   "offer": {
     "kicker": "Before you hit submit",
-    "title": {"s": "Want a former admissions reader to read your essay?", "p": "Want a former admissions reader to read your student's essay?"},
+    "title": {
+      "s": "Want a former admissions reader to read your essay?",
+      "p": "Want a former admissions reader to read your student's essay?"
+    },
     "lede": {
       "s": "I read applications at UChicago. I'll read your Common App essay the way a reader would and show you what to fix. You do the writing. I give the feedback.",
       "p": "I read applications at UChicago. I'll read your student's Common App essay the way a reader would and show them what to fix. Feedback only, so the writing stays theirs."
     },
     "cta": "DM me \"CHECK\" on Instagram →"
   },
-
   "notes": {
     "parents": "I'm applying to UNC-Chapel Hill (Regular Decision, due Jan 15). UNC says it meets 100% of need for students who qualify. Can we run their net price calculator together this week? https://nces.ed.gov/collegenavigator/?id=199120",
     "offer": "I'm applying to UNC-Chapel Hill (due Jan 15). Ms Sweeney, a former UChicago admissions reader, gives essay feedback based on what UNC says matters most. Can we talk about it? You can DM her the word CHECK on Instagram: @mssweeneysays"
   },
-
   "footer_source": "Source: UNC-Chapel Hill 2025–26 Common Data Set (sections C1, C7, C9–C12, G1, H2) and UNC Admissions deadlines. Check UNC's site for anything that changes."
 }
