@@ -149,11 +149,11 @@
   </div>
 
   <div class="panel mine">
-    <p class="frame">
+    <div class="frame">
       {%- for part in c.parts -%}
-      {%- if part.t is defined -%}{{ part.t }}{%- else -%}<span class="blank" contenteditable="true" role="textbox" aria-label="{{ part.ph }}" spellcheck="true" data-i="{{ part.i }}" data-ph="{{ part.ph }} ✎"></span>{%- endif -%}
+      {%- if part.t is defined -%}<span class="ft{% if not part.rest.strip() %} empty{% endif %}"><span class="lead">{{ part.lead }}</span>{{ part.rest }}</span>{%- else -%}<textarea class="blank" rows="1" data-i="{{ part.i }}" aria-label="{{ part.ph }}" placeholder="✎ {{ part.ph }}" autocapitalize="off" autocomplete="off" enterkeyhint="next"></textarea>{%- endif -%}
       {%- endfor -%}
-    </p>
+    </div>
     <p class="tip">Tap a blank and type. Then add details until it sounds like you talking.</p>
     <div class="draft">
       <div class="draft-head"><b>Your rough draft</b><span class="wc" data-wc="{{ c.n }}">0 of 350 words</span></div>

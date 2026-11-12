@@ -18,30 +18,36 @@
     var countEl = document.querySelector('[data-fill-count="' + n + '"]');
     var saved = state.blanks[n] || [];
 
+    function grow(b){
+      // Never shrink below the hint's height, so the box doesn't jump when the first letter is typed
+      b.style.height = 'auto';
+      if (!b.value) b._ph = b.scrollHeight;
+      b.style.height = Math.max(b.scrollHeight, b._ph || 0) + 'px';
+    }
     blanks.forEach(function(b){
       var i = +b.getAttribute('data-i');
-      if (saved[i]) b.textContent = saved[i];
-      // plain text only, one line per blank
-      b.addEventListener('paste', function(e){
-        e.preventDefault();
-        var t = (e.clipboardData || window.clipboardData).getData('text').replace(/\s+/g, ' ');
-        document.execCommand('insertText', false, t);
-      });
+      if (saved[i]) b.value = saved[i];
+      // Enter jumps to the next blank (one line per blank)
       b.addEventListener('keydown', function(e){
         if (e.key === 'Enter') { e.preventDefault(); var next = blanks[i + 1]; if (next) next.focus(); else b.blur(); }
       });
       b.addEventListener('input', function(){
-        if (!b.textContent.trim()) b.innerHTML = '';
-        update();
+        if (/\n/.test(b.value)) b.value = b.value.replace(/\s*\n\s*/g, ' ');
+        grow(b); update();
       });
     });
+    // Grow to fit once fonts and layout are ready, and when the card is shown again
+    requestAnimationFrame(function(){ blanks.forEach(grow); });
+    window.addEventListener('load', function(){ blanks.forEach(grow); });
+    window.addEventListener('resize', function(){ blanks.forEach(grow); });
+    card._grow = function(){ blanks.forEach(grow); };
 
     function update(){
       var vals = [], filled = 0, text = '', html = '';
-      blanks.forEach(function(b){ var v = b.textContent.replace(/\s+/g, ' ').trim(); vals[+b.getAttribute('data-i')] = v; if (v) filled++; b.classList.toggle('filled', !!v); });
+      blanks.forEach(function(b){ var v = b.value.replace(/\s+/g, ' ').trim(); vals[+b.getAttribute('data-i')] = v; if (v) filled++; b.classList.toggle('filled', !!v); });
       // Walk the frame: text nodes are UC-guide frame words, .blank spans are the student's words
       frame.childNodes.forEach(function(node){
-        if (node.nodeType === 3) { text += node.textContent; html += esc(node.textContent); }
+        if (node.classList && node.classList.contains('ft')) { text += node.textContent; html += esc(node.textContent); }
         else if (node.classList && node.classList.contains('blank')) {
           var v = vals[+node.getAttribute('data-i')];
           text += v || '___'; html += v ? esc(v) : '<span class="gap">___</span>';
@@ -64,6 +70,7 @@
       views.forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-view') === v ? 'true' : 'false'); });
       card.querySelector('.panel.mine').hidden = v !== 'mine';
       card.querySelector('.panel.example').hidden = v !== 'example';
+      if (v === 'mine') card._grow();
     }
     views.forEach(function(b){ b.addEventListener('click', function(){ show(b.getAttribute('data-view')); }); });
     card.querySelectorAll('[data-view-btn]').forEach(function(b){

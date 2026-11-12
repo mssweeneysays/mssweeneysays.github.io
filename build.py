@@ -64,7 +64,10 @@ def frame_parts(frame, where):
         if k % 2:
             parts.append({"ph": chunk, "i": i}); i += 1
         elif chunk:
-            parts.append({"t": chunk})
+            # Punctuation right after a blank stays in the draft but isn't shown on its own line
+            m = re.match(r"^([\s,.;:!?]*)(.*)$", chunk, re.S) if parts else None
+            lead, rest = (m.group(1), m.group(2)) if m else ("", chunk)
+            parts.append({"t": chunk, "lead": lead, "rest": rest})
     if not i or any("{" in p.get("t", "") or "}" in p.get("t", "") for p in parts):
         sys.exit(f"{where}: check the {{blanks}} in the frame")
     return parts
