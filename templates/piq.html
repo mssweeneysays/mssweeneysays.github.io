@@ -6,6 +6,20 @@
 {%- if kind == 'data' %} <span class="tag">from UC's guide</span>{% elif kind == 'first' %} <span class="tag first">firsthand</span>{% endif -%}
 {%- if draft and kind in ('first', 'example') %} <span class="tag draft">draft for Amanda</span>{% endif -%}
 {%- endmacro -%}
+{%- macro stuck() -%}
+<div class="stuck" data-until="{{ g.stuck.until }}">
+  <div class="open-offer">
+    <p class="stuck-title">{{ sp(g.stuck.title) }}</p>
+    <p class="stuck-body">{{ sp(g.stuck.body) }}</p>
+    <a class="btn tap" href="https://ig.me/m/mssweeneysays" target="_blank" rel="noopener">{{ g.stuck.cta }}</a>
+  </div>
+  <div class="closed-offer" hidden>
+    <p class="stuck-title">{{ g.stuck.closed_title }}</p>
+    <p class="stuck-body">{{ g.stuck.closed_body }}</p>
+    <a class="btn tap" href="https://ig.me/m/mssweeneysays" target="_blank" rel="noopener">{{ g.stuck.closed_cta }}</a>
+  </div>
+</div>
+{%- endmacro -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -147,6 +161,7 @@
       <button class="btn ghost tap" type="button" data-copy-draft="{{ c.n }}">Copy my draft ⧉</button>
       <p class="copied" data-copied="{{ c.n }}" aria-live="polite"></p>
     </div>
+    {{ stuck() }}
   </div>
 
   <div class="panel example" hidden>
@@ -161,6 +176,7 @@
     </div>
     <p class="tip">Don't copy the story. Copy the moves: a real day, a number, what <em>you</em> did.</p>
     <button class="btn ghost tap" type="button" data-view-btn="mine">✎ Back to my blanks</button>
+    {{ stuck() }}
   </div>
 </section>
 {%- endfor %}

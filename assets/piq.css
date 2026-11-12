@@ -70,3 +70,9 @@ section h2.prompt{font-size:19px;line-height:1.3;font-weight:800;margin-top:8px}
 .margin-note{font-family:var(--hand);font-weight:700;font-size:24px;line-height:1.1;color:var(--coral);transform:rotate(-2deg);margin-top:12px}
 .margin-note::before{content:"↑ "}
 .example .btn{margin-top:12px}
+
+/* "Stuck?" offer strip inside both card views */
+.stuck{margin-top:16px;background:var(--yellow);border-radius:14px;padding:14px}
+.stuck-title{font-weight:800;font-size:17px}
+.stuck-body{font-size:15px;margin-top:4px}
+.stuck .btn{background:var(--ink);color:#fff;margin-top:12px}

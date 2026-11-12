@@ -106,5 +106,13 @@
   });
   paintPicks();
 
+  // Offer strips switch to the closed note after the last day to send PIQs (end of that day, local time)
+  document.querySelectorAll('.stuck[data-until]').forEach(function(el){
+    var p = el.getAttribute('data-until').split('-');
+    var closed = new Date() > new Date(+p[0], +p[1] - 1, +p[2], 23, 59, 59);
+    el.querySelector('.open-offer').hidden = closed;
+    el.querySelector('.closed-offer').hidden = !closed;
+  });
+
   function esc(s){ return s.replace(/[&<>"]/g, function(c){ return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
 })();
