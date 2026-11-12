@@ -1,0 +1,72 @@
+/* PIQ fill-in-the-blank sheet. Loads after sheet.css and only adds what the PIQ page needs. */
+.promise{font-weight:700;margin-top:12px;font-size:16px}
+
+/* UC's rules */
+#rules .fact b{min-width:76px}
+.skip{margin-top:16px;background:#FFE9E9;border-radius:14px;padding:12px;display:grid;gap:8px}
+.skip h3{font-size:14px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+.skip .chip{text-decoration:line-through;text-decoration-color:var(--coral);text-decoration-thickness:2px;color:var(--muted)}
+
+/* Pick your 4 */
+.picks{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px}
+.pick-row{display:grid;grid-template-columns:30px 1fr auto auto;gap:10px;align-items:center;text-decoration:none;color:var(--ink);background:#fff;border-radius:14px;padding:9px 12px;font-weight:700}
+.pick-row .num{width:28px;height:28px;border-radius:50%;background:var(--cobalt);color:#fff;display:grid;place-items:center;font-weight:800;font-size:14px}
+.pick-row .fill-count{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.pick-row .star{font-size:20px;line-height:1;color:var(--muted)}
+.pick-row.picked{background:var(--yellow)}
+.pick-row.picked .star{color:var(--ink)}
+.hint-line{font-size:13px;color:var(--muted);margin-top:6px}
+
+/* Question card */
+.piq{scroll-margin-top:8px}
+.piq-top{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.star-btn{font:inherit;font-weight:800;font-size:13px;background:#fff;color:var(--ink);border-radius:999px;padding:5px 12px}
+.star-btn .on{display:none}
+.star-btn[aria-pressed="true"]{background:var(--yellow)}
+.star-btn[aria-pressed="true"] .on{display:inline}
+.star-btn[aria-pressed="true"] .off{display:none}
+.star-msg{font-size:13px;font-weight:700;color:var(--coral);margin-top:6px}
+section h2.prompt{font-size:19px;line-height:1.3;font-weight:800;margin-top:8px}
+.uc-says{margin-top:10px;font-size:15px;background:#EEF3FF;border-radius:12px;padding:10px 12px}
+.uc-says b{color:var(--cobalt)}
+.ask{margin-top:10px;font-weight:700;font-size:15px;background:#E6F8EE;border-radius:12px;padding:10px 12px}
+
+/* My blanks | Example: same segmented control as Student | Parent */
+.flip{display:flex;margin-top:16px;background:#fff;border:2px solid var(--ink);border-radius:999px;box-shadow:0 3px 0 var(--ink);overflow:hidden}
+.flip button{flex:1;font:inherit;font-weight:800;font-size:14px;border:0;background:transparent;color:var(--ink);padding:9px 10px;cursor:pointer}
+.flip button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.panel{margin-top:14px}
+.panel[hidden]{display:none}
+
+/* The mad lib. Blanks are interactive: ink underline + lift + ✎ */
+.frame{font-size:18px;line-height:2.05}
+.blank{display:inline;background:#FFF7D1;border-bottom:2.5px solid var(--ink);box-shadow:0 2px 0 var(--ink);border-radius:6px 6px 2px 2px;padding:2px 6px;font-weight:700;color:var(--ink);cursor:text;outline:none;box-decoration-break:clone;-webkit-box-decoration-break:clone;word-break:break-word}
+.blank:empty::before{content:attr(data-ph);color:#7C8A84;font-weight:600;font-size:15px}
+.blank:focus{background:#FFE98A}
+.blank:focus-visible{outline:3px solid var(--cobalt);outline-offset:1px}
+.blank.filled{background:#FFE98A}
+.tip{font-size:14px;color:var(--muted);margin-top:10px}
+
+.draft{margin-top:14px;background:#F2F6FF;border-radius:14px;padding:12px}
+.draft-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.draft-head b{font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:var(--cobalt)}
+.wc{font-size:13px;font-weight:800;font-variant-numeric:tabular-nums}
+.wc.over{color:var(--coral)}
+.draft-text{margin-top:8px;font-size:15px;line-height:1.55;white-space:pre-wrap}
+.draft-text .gap{color:#9AA8A2}
+.draft .btn{margin-top:12px}
+
+/* The example: Ms Sweeney's handwriting on lined paper */
+.paper{position:relative;background:#fff;border-radius:14px;padding:16px 14px 14px 30px;
+  background-image:linear-gradient(90deg,transparent 21px,#F5B7B7 21px,#F5B7B7 23px,transparent 23px),
+                   repeating-linear-gradient(180deg,transparent 0,transparent 36px,#DCE6FB 36px,#DCE6FB 37px);
+  background-position:0 0,0 12px;box-shadow:0 1px 0 var(--line)}
+.paper .who{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);line-height:37px;margin-top:-6px}
+.paper .who .tag{vertical-align:1px}
+.paper .frame{font-size:17px;line-height:37px;margin-top:6px;color:var(--muted)}
+.ink{font-family:var(--hand);font-weight:700;font-size:25px;line-height:1;color:var(--cobalt);
+  background:linear-gradient(180deg,transparent 58%,rgba(255,212,59,.6) 58%);padding:0 2px;
+  box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.margin-note{font-family:var(--hand);font-weight:700;font-size:24px;line-height:1.1;color:var(--coral);transform:rotate(-2deg);margin-top:12px}
+.margin-note::before{content:"↑ "}
+.example .btn{margin-top:12px}

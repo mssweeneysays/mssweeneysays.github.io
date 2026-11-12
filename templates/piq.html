@@ -1,0 +1,205 @@
+{#- PIQ fill-in-the-blank sheet. Content comes from guides/piq.json. Same look and Student | Parent mode as the school sheets. -#}
+{%- macro sp(v) -%}
+{%- if v is mapping -%}<span class="s">{{ v.s|safe }}</span><span class="p">{{ v.p|safe }}</span>{%- else -%}{{ v|safe }}{%- endif -%}
+{%- endmacro -%}
+{%- macro tags(kind) -%}
+{%- if kind == 'data' %} <span class="tag">from UC's guide</span>{% elif kind == 'first' %} <span class="tag first">firsthand</span>{% endif -%}
+{%- if draft and kind in ('first', 'example') %} <span class="tag draft">draft for Amanda</span>{% endif -%}
+{%- endmacro -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ g.name }} Decoded · Ms Sweeney Says</title>
+<meta name="description" content="{{ g.preview.description }}">
+{%- if draft %}
+<meta name="robots" content="noindex">
+{%- endif %}
+<link rel="canonical" href="{{ url }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ms Sweeney Says">
+<meta property="og:title" content="{{ g.preview.title }}">
+<meta property="og:description" content="{{ g.preview.description }}">
+<meta property="og:url" content="{{ url }}">
+<meta property="og:image" content="{{ url }}og.png?v={{ g.updated }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ g.preview.title }}: {{ g.preview.image_line }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ g.preview.title }}">
+<meta name="twitter:description" content="{{ g.preview.description }}">
+<meta name="twitter:image" content="{{ url }}og.png?v={{ g.updated }}">
+<meta name="theme-color" content="#2D6BFF">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/manrope-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/caveat-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/sheet.css?v={{ build }}">
+<link rel="stylesheet" href="../assets/piq.css?v={{ build }}">
+</head>
+<body>
+<div class="wrap">
+
+{% if draft %}<p class="proto">{{ g.review_note }}</p>{% endif %}
+
+<header class="hero">
+  <div class="eyebrow">Ms Sweeney Decoded</div>
+  <h1><span class="hl">UC PIQs</span><br>{{ sp(g.hero.headline) }}</h1>
+  <p class="sub">{{ sp(g.hero.sub) }}</p>
+  <div class="deadline">
+    <div class="dl-box"><b>{{ g.deadline.display }}</b><span>{{ g.deadline.label }}</span></div>
+    <div class="dl-box dl-days"><b id="days">—</b><span>days left</span></div>
+  </div>
+</header>
+<p class="promise">{{ sp(g.hero.promise) }}</p>
+
+<div class="toolbar">
+  <div class="mode">
+    <span class="lbl">I'm a:</span>
+    <div class="seg" role="group" aria-label="Show this page for a student or a parent">
+      <button type="button" data-mode="student" aria-pressed="true">Student</button>
+      <button type="button" data-mode="parent" aria-pressed="false">Parent</button>
+    </div>
+  </div>
+  <button class="share tap" type="button" data-share data-url="{{ url }}" data-title="{{ g.preview.title }}" data-text="{{ g.preview.share_text }}" data-msg="share-msg-top">{{ share_icon|safe }}Share</button>
+</div>
+<p class="share-msg" id="share-msg-top" aria-live="polite"></p>
+
+<nav class="jump" aria-label="Jump to a section">
+  <a class="tap help" href="#offer">Get help ↓</a>
+  <a class="tap" href="#rules">UC's rules ↓</a>
+  <a class="tap" href="#pick">Pick your 4 ↓</a>
+  <a class="tap" href="#q1">The 8 questions ↓</a>
+  <a class="tap" href="#check">Reader's check ↓</a>
+</nav>
+
+<section id="rules" aria-labelledby="h-rules">
+  <div class="kicker">{{ g.rules.kicker }}{{ tags('data') }}</div>
+  <h2 id="h-rules">{{ g.rules.title }}</h2>
+  <div class="facts">
+    {%- for f in g.rules.facts %}
+    <div class="fact"><b>{{ f.big }}</b><span>{{ f.text }}</span></div>
+    {%- endfor %}
+  </div>
+  <p class="note">{{ g.rules.note }}</p>
+  <div class="skip">
+    <h3>Skip these</h3>
+    <div class="chips">
+      {%- for k in g.rules.skip %}
+      <span class="chip">{{ k }}</span>
+      {%- endfor %}
+    </div>
+  </div>
+  <p class="src">{{ g.rules.src }}</p>
+</section>
+
+<section class="take" aria-labelledby="h-take">
+  <div class="kicker">Ms Sweeney's take{{ tags('first') }}</div>
+  <div class="take-head">
+    <img src="../assets/amanda.jpg" width="84" height="84" alt="Ms Sweeney smiling, in a green top against a blue background">
+    <p><b>Ms Sweeney</b>Former UChicago admissions reader</p>
+  </div>
+  <h2 id="h-take" style="font-size:20px;margin-top:16px">{{ g.take.heading }}</h2>
+  <blockquote>{{ g.take.quote }}</blockquote>
+  <p class="sig">— Ms Sweeney</p>
+</section>
+
+<section id="pick" aria-labelledby="h-pick">
+  <div class="kicker">{{ g.pick.kicker }}</div>
+  <h2 id="h-pick">{{ g.pick.title }}</h2>
+  <p class="lede">{{ sp(g.pick.lede) }}</p>
+  <ol class="picks" aria-label="Your 8 questions">
+    {%- for c in g.cards %}
+    <li><a class="pick-row tap" href="#q{{ c.n }}" data-pick-row="{{ c.n }}"><span class="num">{{ c.n }}</span><span class="pt">{{ c.topic }}</span><span class="star" aria-hidden="true">☆</span><span class="fill-count" data-fill-count="{{ c.n }}">0/{{ c.blanks|length }}</span></a></li>
+    {%- endfor %}
+  </ol>
+  <p class="progress" id="pick-count" aria-live="polite">0 of 4 picked</p>
+  <p class="hint-line">Everything you type stays on this phone. Nothing is saved or sent anywhere else.</p>
+</section>
+
+{%- for c in g.cards %}
+<section id="q{{ c.n }}" class="piq" data-card="{{ c.n }}" aria-labelledby="h-q{{ c.n }}">
+  <div class="piq-top">
+    <div class="kicker">Question {{ c.n }} · {{ c.topic }}</div>
+    <button class="star-btn tap" type="button" data-star="{{ c.n }}" aria-pressed="false"><span class="off">☆ One of my 4</span><span class="on">★ One of my 4</span></button>
+  </div>
+  <h2 id="h-q{{ c.n }}" class="prompt">“{{ c.prompt }}”</h2>
+  <p class="uc-says"><b>UC says:</b> {{ c.uc_says }}</p>
+  <p class="ask p">{{ c.ask }}</p>
+
+  <div class="flip" role="group" aria-label="Your blanks or Ms Sweeney's example">
+    <button type="button" data-view="mine" aria-pressed="true">✎ My blanks</button>
+    <button type="button" data-view="example" aria-pressed="false">See my example →</button>
+  </div>
+
+  <div class="panel mine">
+    <p class="frame">
+      {%- for part in c.parts -%}
+      {%- if part.t is defined -%}{{ part.t }}{%- else -%}<span class="blank" contenteditable="true" role="textbox" aria-label="{{ part.ph }}" spellcheck="true" data-i="{{ part.i }}" data-ph="{{ part.ph }} ✎"></span>{%- endif -%}
+      {%- endfor -%}
+    </p>
+    <p class="tip">Tap a blank and type. Then add details until it sounds like you talking.</p>
+    <div class="draft">
+      <div class="draft-head"><b>Your rough draft</b><span class="wc" data-wc="{{ c.n }}">0 of 350 words</span></div>
+      <p class="draft-text" data-draft="{{ c.n }}"></p>
+      <button class="btn ghost tap" type="button" data-copy-draft="{{ c.n }}">Copy my draft ⧉</button>
+      <p class="copied" data-copied="{{ c.n }}" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <div class="panel example" hidden>
+    <div class="paper">
+      <p class="who">Made-up student: {{ c.example.who }}{{ tags('example') }}</p>
+      <p class="frame">
+        {%- for part in c.parts -%}
+        {%- if part.t is defined -%}{{ part.t }}{%- else -%}<span class="ink">{{ c.example.fills[part.i] }}</span>{%- endif -%}
+        {%- endfor -%}
+      </p>
+      <p class="margin-note">{{ c.example.note }}</p>
+    </div>
+    <p class="tip">Don't copy the story. Copy the moves: a real day, a number, what <em>you</em> did.</p>
+    <button class="btn ghost tap" type="button" data-view-btn="mine">✎ Back to my blanks</button>
+  </div>
+</section>
+{%- endfor %}
+
+<section id="check" class="essay" aria-labelledby="h-check">
+  <div class="kicker">{{ g.self_check.kicker }}{{ tags('first') }}</div>
+  <h2 id="h-check">{{ sp(g.self_check.title) }}</h2>
+  <p class="lede">{{ sp(g.self_check.lede) }}</p>
+  <ul class="todo" id="check-list">
+    {%- for e in g.self_check['items'] %}
+    <li><label class="tap" for="e{{ loop.index }}"><input type="checkbox" id="e{{ loop.index }}"><span><b>{{ e.title }}</b><span>{{ e.body }}</span></span></label></li>
+    {%- endfor %}
+  </ul>
+  <p class="score" id="check-score" aria-live="polite">0 of {{ g.self_check['items']|length }}</p>
+  <p class="after" id="check-after">{{ sp(g.self_check.after) }}</p>
+</section>
+
+<section id="offer" class="offer" aria-labelledby="h-offer">
+  <div class="kicker">{{ g.offer.kicker }}</div>
+  <h2 id="h-offer">{{ sp(g.offer.title) }}</h2>
+  <p class="lede">{{ sp(g.offer.lede) }}</p>
+  <a class="btn tap" href="https://ig.me/m/mssweeneysays" target="_blank" rel="noopener">{{ g.offer.cta }}</a>
+  <p class="fine s">Parents: you're welcome to message me directly too.</p>
+  <button class="btn ghost tap s" type="button" data-copy="offer">Not paying for it yourself? Copy a note for your parents ⧉</button>
+  <p class="copied" id="copied-offer" aria-live="polite"></p>
+</section>
+
+<footer>
+  <span class="me">Made by Ms Sweeney, former UChicago admissions reader.</span>
+  <span>{{ g.footer_source }}</span>
+  <a class="lib-link" href="../">Applying to other schools? Find their cheat sheets →</a>
+  <a href="https://www.instagram.com/mssweeneysays/" target="_blank" rel="noopener">Follow @mssweeneysays for more →</a>
+  <button class="share tap" type="button" data-share data-url="{{ url }}" data-title="{{ g.preview.title }}" data-text="{{ g.preview.share_text }}" data-msg="share-msg-foot">{{ share_icon|safe }}Share this page</button>
+  <p class="share-msg" id="share-msg-foot" aria-live="polite" style="text-align:left"></p>
+</footer>
+
+</div>
+<script id="sheet-data" type="application/json">{{ js_data|safe }}</script>
+<script src="../assets/sheet.js?v={{ build }}"></script>
+<script src="../assets/piq.js?v={{ build }}"></script>
+</body>
+</html>

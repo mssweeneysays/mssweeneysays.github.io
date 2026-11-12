@@ -11,9 +11,13 @@ A school with "status": "draft" gets the review banner, "draft for Amanda" tags 
 noindex, and stays off the library. Flip it to "live" once Amanda signs off.
   python3 build.py --preview   also lists draft schools in the library (for review only).
 
+Guides (not schools) live in guides/<slug>.json and name their own template, e.g.
+  guides/piq.json  ->  piq/index.html + piq/og.png   (templates/piq.html)
+Same draft/live rule. Blanks in a guide's card "frame" are written {like this}.
+
 Needs: jinja2 and playwright (python). Images render with Chromium.
 """
-import json, sys, time, pathlib
+import json, re, sys, time, pathlib
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -51,6 +55,35 @@ def load_schools():
         s.setdefault("todo", None)
         schools.append(s)
     return schools
+
+
+def frame_parts(frame, where):
+    """'In {a group}, ...' -> [{'t': 'In '}, {'ph': 'a group', 'i': 0}, {'t': ', ...'}]"""
+    parts, i = [], 0
+    for k, chunk in enumerate(re.split(r"\{([^{}]+)\}", frame)):
+        if k % 2:
+            parts.append({"ph": chunk, "i": i}); i += 1
+        elif chunk:
+            parts.append({"t": chunk})
+    if not i or any("{" in p.get("t", "") or "}" in p.get("t", "") for p in parts):
+        sys.exit(f"{where}: check the {{blanks}} in the frame")
+    return parts
+
+
+def load_guides():
+    guides = []
+    for f in sorted((ROOT / "guides").glob("*.json")) if (ROOT / "guides").exists() else []:
+        g = json.loads(f.read_text())
+        if g.get("status") not in ("draft", "live"):
+            sys.exit(f"{f.name}: status must be draft or live")
+        for c in g.get("cards", []):
+            c["parts"] = frame_parts(c["frame"], f"{f.name} card {c['n']}")
+            c["blanks"] = [p for p in c["parts"] if "ph" in p]
+            if len(c["example"]["fills"]) != len(c["blanks"]):
+                sys.exit(f"{f.name} card {c['n']}: {len(c['blanks'])} blanks but "
+                         f"{len(c['example']['fills'])} example fills")
+        guides.append(g)
+    return guides
 
 
 def page_data(s):
@@ -103,6 +136,21 @@ def main():
             sub="Your one-page application check", note=s["preview"]["image_line"],
             chip=s["library"]["deadline_text"]), out / "og.png", (1200, 630)))
         print(f"  {s['slug']}/  ({s['status']})")
+
+    for g in load_guides():
+        out = ROOT / g["slug"]
+        out.mkdir(exist_ok=True)
+        url = f"{BASE}{g['slug']}/"
+        js = json.dumps({"slug": g["slug"], "deadline": g["deadline"]["date"], "grids": [], "gpa": None,
+                         "todo_done": "", "check_done": g["self_check"]["all_done"], "notes": g["notes"]},
+                        ensure_ascii=False).replace("</", "<\\/")
+        (out / "index.html").write_text(env.get_template(g["template"]).render(
+            g=g, draft=g["status"] == "draft", url=url, build=BUILD, share_icon=SHARE_ICON, js_data=js))
+        images.append((og.render(title=f'<span class="hl">{g["name"]}</span>', title_size=88,
+                                 sub=g["preview"]["title"].split(", ", 1)[-1].capitalize(),
+                                 note=g["preview"]["image_line"], chip=g["library"]["deadline_text"]),
+                       out / "og.png", (1200, 630)))
+        print(f"  {g['slug']}/  ({g['status']}, guide)")
 
     listed = [s for s in schools if s["status"] == "live" or PREVIEW]
     listed.sort(key=lambda s: s["name"])

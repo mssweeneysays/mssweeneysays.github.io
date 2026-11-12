@@ -1,0 +1,235 @@
+{
+  "slug": "piq",
+  "status": "draft",
+  "template": "piq.html",
+  "updated": "2026-11-12",
+  "name": "UC PIQs",
+  "review_note": "Draft for Amanda's review. Check the 8 prompt wordings against UC's site, approve the take, and read every made-up example before this goes in any DM.",
+  "preview": {
+    "title": "UC PIQs, as fill-in-the-blanks",
+    "description": "The 8 UC Personal Insight Questions turned into fill-in-the-blanks you can type into, with a handwritten example for each one. Built from UC's own guide for counselors.",
+    "image_line": "Type in the blanks. Steal the moves.",
+    "share_text": "The 8 UC Personal Insight Questions as fill-in-the-blanks, with an example for each one."
+  },
+  "library": {
+    "blurb": "All 8 Personal Insight Questions as fill-in-the-blanks, with an example for each.",
+    "deadline_text": "Due Nov 30"
+  },
+  "deadline": { "date": "2026-11-30", "display": "Nov 30", "label": "UC application due, 11:59 PM Pacific" },
+  "hero": {
+    "headline": { "s": "Fill in the blanks. Then make them yours.", "p": "Fill in the blanks. Then your student makes them theirs." },
+    "sub": {
+      "s": "UC gives counselors a guide to its 8 questions. I turned it into blanks you can type into, with an example for each one.",
+      "p": "UC gives counselors a guide to its 8 questions. I turned it into blanks your student can type into, with an example for each one."
+    },
+    "promise": {
+      "s": "By the end, you'll have 4 rough drafts built from real details, not a blank page.",
+      "p": "By the end, your student has 4 rough drafts built from real details, not a blank page."
+    }
+  },
+  "rules": {
+    "kicker": "What UC told counselors",
+    "title": "5 rules from UC's own guide",
+    "facts": [
+      { "big": "4 of 8", "text": "Answer any 4 of the 8 questions." },
+      { "big": "350", "text": "Each answer can be up to 350 words." },
+      { "big": "0", "text": "Favorite questions. No question helps or hurts you. They're numbered, not ranked." },
+      { "big": "Now", "text": "Most of each answer should be about the present or recent past." },
+      { "big": "Facts", "text": "Readers look at what you say about yourself, not your style or structure." }
+    ],
+    "note": "Good news: they're not grading your sentences.",
+    "skip": ["\"I'm passionate about…\"", "\"Ever since I was little…\"", "\"It taught me so much.\"", "A dictionary definition", "A link (readers can't click it)"],
+    "src": "Source: University of California, Personal Insight Questions guide for counselors (fall 2025 first-year edition). Check UC's site for anything that changes."
+  },
+  "take": {
+    "heading": "What I saw as an admissions reader",
+    "quote": "The answers I remember were never the fanciest. They were the most specific: one real Saturday, one real number, one thing you actually did. UC says it out loud: they read for facts about you. So fill every blank with something only you could write."
+  },
+  "pick": {
+    "kicker": "Start here: 10 minutes",
+    "title": "Pick your 4",
+    "lede": {
+      "s": "Fill in just the first blank on all 8 cards. The 4 where real details came fastest are your 4. Tap ☆ on those cards.",
+      "p": "Have your student fill in just the first blank on all 8 cards. The 4 where real details came fastest are their 4. Tap ☆ on those cards."
+    }
+  },
+  "cards": [
+    {
+      "n": 1, "topic": "Leadership",
+      "prompt": "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
+      "uc_says": "You don't need a definition of leadership, and it isn't asking about titles.",
+      "ask": "Ask your student: when did you step up when nobody asked you to?",
+      "frame": "In {a group, team, family or job you're part of}, {the moment that needed someone: one real day or problem}. I stepped up by {what you did: 2 or 3 action verbs}. The hard part was {what made it hard}. Because of it, {what changed, with a number if you can}. Now I {how you lead or help now}.",
+      "example": {
+        "who": "Daniela, family business",
+        "fills": [
+          "my aunt's taco truck on weekends",
+          "our card reader died on a Saturday with 20 people in line",
+          "taking cash, writing orders on paper plates and sending my cousin to the bank for change",
+          "nobody put me in charge. My aunt was cooking and I'm 16",
+          "we didn't lose one order. Now we keep a backup cash box and a printed price list",
+          "train the 2 new weekend workers, and my robotics team calls me when a plan falls apart"
+        ],
+        "note": "No title needed. Just a real Saturday."
+      }
+    },
+    {
+      "n": 2, "topic": "Creativity",
+      "prompt": "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
+      "uc_says": "Don't box in your idea of creative. A smart fix counts as much as art.",
+      "ask": "Ask your student: what's a problem you solved in a way nobody else would have?",
+      "frame": "The problem was {a real problem you had to solve}. The obvious fix was {what most people would do}, but I tried {your different idea} instead. Here's what happened: {the result}. I use that same kind of thinking now when I {where it shows up today}.",
+      "example": {
+        "who": "Jordan, big brother",
+        "fills": [
+          "my little brother would not practice reading",
+          "flash cards and a timer",
+          "writing a comic about his dog, one page a night, where he had to read the speech bubbles out loud to find out what happened",
+          "we finished 41 pages, and his teacher moved him up a reading group in March",
+          "plan lessons for the kids I tutor at the library on Tuesdays"
+        ],
+        "note": "Creative doesn't have to mean art."
+      }
+    },
+    {
+      "n": 3, "topic": "Talent or skill",
+      "prompt": "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
+      "uc_says": "List your skills first, then pick the one that means the most. Focus on how it shows up now.",
+      "ask": "Ask your student: what do people come to you for?",
+      "frame": "Things I'm good at: {skill 1}, {skill 2} and {skill 3}. The one that matters most to me is {pick one} because {why it matters}. It {came naturally, or took work}: {how you built it}. Proof from this year: {one specific moment, with a number if you can}.",
+      "example": {
+        "who": "Luis, translator",
+        "fills": [
+          "fixing phones",
+          "making people laugh",
+          "translating Spanish and English",
+          "translating",
+          "my family counts on it for real things, like doctor visits and our lease",
+          "took work",
+          "I keep a notebook of medical and money words I didn't know. It's 6 pages now",
+          "I translated at 9 of my grandma's appointments, and now I help at the clinic front desk on Thursdays"
+        ],
+        "note": "List first. Then pick."
+      }
+    },
+    {
+      "n": 4, "topic": "Educational opportunity or barrier",
+      "prompt": "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
+      "uc_says": "You're not being compared to other students. This gives readers context for your grades and classes.",
+      "ask": "Ask your student: what did you go out and find that your school didn't offer?",
+      "frame": "At my school, {what was missing, or what was offered}. So I {what you did: a program, mentor, online class or community college class}. It cost me {what you gave up: time, sleep, a shift at work}. What I got out of it: {what you learned or can do now}. You can see it in my transcript as {the class, grade or credit}.",
+      "example": {
+        "who": "Priya, coder",
+        "fills": [
+          "there's no computer science class",
+          "took Intro to Python at our community college 2 nights a week, 2 buses each way",
+          "my Tuesday and Thursday shifts at the grocery store",
+          "I can build programs that work. I made the sign-up sheet our school food pantry uses",
+          "Intro to Python, an A, on my community college transcript"
+        ],
+        "note": "Context, not a contest."
+      }
+    },
+    {
+      "n": 5, "topic": "Significant challenge",
+      "prompt": "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
+      "uc_says": "It can be personal. Share only what you want to. But say how it affected your schoolwork.",
+      "ask": "Ask gently and let them choose what to share: what's been hardest, and how did it affect school?",
+      "frame": "The hardest thing I've faced is {one honest sentence. Share only what you want to}. It hit my schoolwork when {what happened to grades, attendance or focus}. The steps I took: {what you did, in order}. Where I am now: {how school is going now}. What I know about myself because of it: {what you learned}.",
+      "example": {
+        "who": "Sam, new kid twice",
+        "fills": [
+          "my family moved 3 times in 2 years, so I changed high schools twice",
+          "I missed most of Algebra 2 at my old school and got a D first semester",
+          "I asked for the class notes on day one, went to lunch tutoring 3 days a week and retook the unit tests",
+          "I got a B+ in Precalculus this year",
+          "I don't wait until I'm behind anymore. I ask on day one"
+        ],
+        "note": "Tie it back to school. That's the question."
+      }
+    },
+    {
+      "n": 6, "topic": "Academic subject",
+      "prompt": "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
+      "uc_says": "The subject doesn't have to be a core class. Say how it connects to what you want to study.",
+      "ask": "Ask your student: what class or topic do you keep thinking about after the bell?",
+      "frame": "I got hooked on {a subject} when {one specific class, book, problem or moment}. Outside of class, I {what you did on your own}. It connects to {a major or career you're thinking about} because {why it matters to you}. The question I still want to answer: {a real question}",
+      "example": {
+        "who": "Maya, baker",
+        "fills": [
+          "chemistry",
+          "we figured out why my mom's bread kept coming out flat. It was the yeast and the water temperature",
+          "keep a baking log with temperatures and results. I'm at 30 loaves",
+          "food science",
+          "I want to make food that's cheap, healthy and still tastes good",
+          "why does gluten-free bread fall apart, and can I fix it?"
+        ],
+        "note": "One real moment beats \"I've always loved…\""
+      }
+    },
+    {
+      "n": 7, "topic": "School or community",
+      "prompt": "What have you done to make your school or your community a better place?",
+      "uc_says": "Small changes count. If it was a group, focus on your part. Readers can't click links.",
+      "ask": "Ask your student: what's one thing you made better, even a small thing?",
+      "frame": "I noticed {a problem at your school or in your community}. It bothered me because {why you cared}. My part, not the group's, was {your specific jobs}. What changed: {the result. Small counts}. What I learned: {one thing you'd do again or do differently}.",
+      "example": {
+        "who": "Ethan, lunch-line fixer",
+        "fills": [
+          "kids at my school skipped lunch because the line took 20 minutes",
+          "my friends were buying chips from the vending machine instead of eating",
+          "timing the line for 2 weeks, making a chart and presenting it to our principal",
+          "they opened a second line in January, and the wait is about 8 minutes now",
+          "numbers get adults to listen faster than complaints do"
+        ],
+        "note": "Your part. Not just \"we.\""
+      }
+    },
+    {
+      "n": 8, "topic": "Anything else",
+      "prompt": "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?",
+      "uc_says": "Use it to explain or add to what's already in your application. Don't send extra documents.",
+      "ask": "Ask your student: what should a reader know that isn't on your transcript?",
+      "frame": "Something readers won't see anywhere else in my application: {a fact about your life}. On a normal school day, I also {what fills your time outside class}. One thing in my application that needs context is {a grade, gap or empty spot}, because {the reason}. What all of this says about me as a student: {one sentence}.",
+      "example": {
+        "who": "Ana, oldest sister",
+        "fills": [
+          "I take care of my 2 younger sisters every day after school until 7",
+          "make dinner and check their homework, then start mine at 8",
+          "my junior year has no sports or clubs",
+          "my after-school hours go to my sisters",
+          "I'm organized, and I finish what I start"
+        ],
+        "note": "Add context. Don't repeat."
+      }
+    }
+  ],
+  "self_check": {
+    "kicker": "Reader's check",
+    "title": { "s": "Before you paste them into UC's application", "p": "Before your student pastes them into UC's application" },
+    "lede": { "s": "Tap each one you can say yes to, for all 4 answers.", "p": "Your student taps each one they can say yes to, for all 4 answers." },
+    "items": [
+      { "title": "Most of it is about now", "body": "Most of each answer is about the present or the last year or two. One line of backstory is plenty." },
+      { "title": "Every blank is only-you", "body": "Could another student paste your blank into their answer? If yes, add a place, a day or a number." },
+      { "title": "You said what you did", "body": "In group stories, readers need your part. Swap some \"we\" for \"I.\"" },
+      { "title": "#5 ties back to school", "body": "If you picked the challenge question, you said how it affected your schoolwork and what you did about it." },
+      { "title": "4 different sides", "body": "Your 4 answers show 4 different sides of you, not the same story 4 times." },
+      { "title": "No links, no \"see my resume\"", "body": "Readers can't click links or look you up. Everything they need is in your words." }
+    ],
+    "all_done": "6 of 6. Read all 4 out loud once, then paste them in.",
+    "after": { "s": "Not there yet? That's normal. Fix one thing at a time.", "p": "Not there yet? That's normal. Help them fix one thing at a time." }
+  },
+  "offer": {
+    "kicker": "Before you hit submit",
+    "title": { "s": "Want a former admissions reader to read your 4 PIQs?", "p": "Want a former admissions reader to read your student's 4 PIQs?" },
+    "lede": {
+      "s": "I read applications at UChicago. I'll read all 4 of your answers together the way a reader would and rank what to fix first. You do the writing. I give the feedback. Send them by Mon, Nov 16, so there's time to revise before Nov 30.",
+      "p": "I read applications at UChicago. I'll read all 4 of your student's answers together the way a reader would and rank what to fix first. Feedback only, so the writing stays theirs. Send them by Mon, Nov 16, so there's time to revise before Nov 30."
+    },
+    "cta": "DM me \"PIQ\" on Instagram →"
+  },
+  "notes": {
+    "offer": "Hi! I'm working on my UC Personal Insight Questions (the 4 short answers on the UC application, due Nov 30). Ms Sweeney, a former admissions reader, reads all 4 together and gives ranked feedback. A parent has to book it. Could you DM her \"PIQ\" on Instagram? @mssweeneysays"
+  },
+  "footer_source": "Prompts and rules: University of California, Personal Insight Questions guide for counselors (fall 2025 first-year edition) and UC's dates and deadlines page. Every example is a made-up student. Check UC's site for anything that changes."
+}
