@@ -137,7 +137,8 @@ def main():
             chip=s["library"]["deadline_text"]), out / "og.png", (1200, 630)))
         print(f"  {s['slug']}/  ({s['status']})")
 
-    for g in load_guides():
+    guides = load_guides()
+    for g in guides:
         out = ROOT / g["slug"]
         out.mkdir(exist_ok=True)
         url = f"{BASE}{g['slug']}/"
@@ -156,7 +157,7 @@ def main():
     listed.sort(key=lambda s: s["name"])
     desc = "One-page college cheat sheets from a former admissions reader: what each school says matters most, straight from its own Common Data Set."
     (ROOT / "index.html").write_text(library.render(
-        schools=listed, url=BASE, build=BUILD, share_icon=SHARE_ICON, description=desc))
+        schools=listed, guides=[g for g in guides if g["status"] == "live" or PREVIEW], url=BASE, build=BUILD, share_icon=SHARE_ICON, description=desc))
     images.append((og.render(title='Your school, <span class="hl">on one page</span>', title_size=76,
                              sub="College cheat sheets from a former admissions reader",
                              note="Straight from each school's own data", chip=""),

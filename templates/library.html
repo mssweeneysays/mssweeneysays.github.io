@@ -38,6 +38,18 @@
 </div>
 <p class="share-msg" id="share-msg-top" aria-live="polite"></p>
 
+{%- if guides %}
+<ul class="cards">
+  {%- for g in guides %}
+  <li><a class="card tap guide-card" href="{{ g.slug }}/">
+    <div class="row"><h2>{{ g.name }}: fill in the blanks</h2><span class="dl">{{ g.library.deadline_text }}</span></div>
+    <p>{{ g.library.blurb }}</p>
+    <span class="go">Open the PIQ sheet →</span>
+  </a></li>
+  {%- endfor %}
+</ul>
+<p class="kicker" style="margin-top:22px">School cheat sheets</p>
+{%- endif %}
 <ul class="cards">
   {%- for s in schools %}
   <li><a class="card tap" href="{{ s.slug }}/">

@@ -194,3 +194,5 @@ footer .share{justify-self:start;margin-top:4px}
 .card p{font-size:15px;color:var(--muted)}
 .card .go{font-weight:800;color:var(--cobalt);font-size:15px}
 .ask{background:var(--paper)}
+.guide-card{background:var(--yellow)}
+.guide-card .dl{background:#fff}
