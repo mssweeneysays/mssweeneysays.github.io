@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:"Manrope";font-weight:800;src:url(../assets/fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:"Manrope";font-weight:700;src:url(../assets/fonts/manrope-latin-700-normal.woff2)}
+@font-face{font-family:"Caveat";font-weight:700;src:url(../assets/fonts/caveat-latin-700-normal.woff2)}
+*{box-sizing:border-box;margin:0}
+body{width:1200px;height:630px;background:#2D6BFF;font-family:Manrope;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px}
+.row{display:flex;align-items:center;gap:40px}
+.mark{width:220px;height:220px;filter:drop-shadow(10px 10px 0 #06251C)}
+.mark rect{stroke:#fff;stroke-width:3}
+.word{font-size:104px;font-weight:800;line-height:.98;letter-spacing:-.01em}
+.word .hl{display:inline-block;margin-top:14px;background:#FFD43B;color:#06251C;padding:0 .12em;border-radius:14px}
+.note{font-family:Caveat;font-size:54px;color:#FFD43B;transform:rotate(-1.5deg)}
+</style></head>
+<body>
+  <div class="row">
+    <svg class="mark" viewBox="0 0 64 64"><rect x="1.5" y="1.5" width="61" height="61" rx="14" fill="#2D6BFF"/><path d="M10 40 L54 28" stroke="#FFD43B" stroke-width="14" stroke-linecap="round"/><path d="M18 33 L28 43 L47 20" fill="none" stroke="#06251C" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div class="word">Ms Sweeney<br><span class="hl">Says</span></div>
+  </div>
+  <p class="note">made just for you ✓</p>
+</body></html>
