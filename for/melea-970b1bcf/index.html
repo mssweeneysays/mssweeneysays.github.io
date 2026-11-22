@@ -40,6 +40,24 @@
   .pill{display:inline-block;font-size:12px;font-weight:800;border-radius:6px;padding:2px 7px;white-space:nowrap}
   .vi{background:var(--yellow)}.im{background:#D4F4E3}.co{background:#ECE7FF}.na{color:var(--muted);font-weight:700;font-size:13px}
   .list{margin:12px 0 0;padding-left:20px;display:grid;gap:8px}
+  .prep{background:#fff;border:2px solid var(--cobalt)}
+  .ask{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+  .ask:first-of-type{border-top:0;padding-top:0}
+  .ask b{display:block}
+  .ask p{margin:4px 0 8px;color:var(--muted);font-size:15px}
+  .choice{display:grid;gap:6px;margin-top:6px}
+  .choice label{display:flex;gap:10px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:10px;font-weight:600}
+  .choice input{margin-top:3px;accent-color:var(--cobalt)}
+  .field{width:100%;box-sizing:border-box;font:inherit;font-size:16px;border:1.5px solid var(--line);border-radius:10px;padding:9px 10px;background:#fff;color:var(--ink)}
+  .field:focus{outline:2px solid var(--cobalt);border-color:var(--cobalt)}
+  textarea.field{min-height:84px;resize:vertical}
+  .mm{display:grid;gap:10px;margin-top:12px}
+  .mm .row{border:1px solid var(--line);border-radius:14px;padding:12px;background:#fff}
+  .mm .row.done{border-color:var(--jade);background:#F2FCF6}
+  .mm .what{font-weight:800}
+  .mm .says{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:14px;margin:6px 0 8px;color:var(--muted)}
+  .mm .says span:nth-child(odd){font-weight:800;color:var(--ink);white-space:nowrap}
+  .copy-out{margin-top:6px;font-size:14px;color:var(--muted);font-weight:700;min-height:1.2em}
 </style>
 </head>
 <body>
@@ -61,8 +79,51 @@
   <ol>
     <li>Melea has a strong set. Her 4 PIQs show 4 different sides of her (maker, builder, advocate, competitor), and none needs a new story. Her ranked feedback is waiting as comments in her Google Doc.</li>
     <li>Her top 4 moves: show how she makes her art (PIQ 2), finish the setup in PIQ 4's opening, give PIQ 7 its own ending, and carry her volleyball drive into the classroom (PIQ 8).</li>
-    <li>I also checked what each of her 4 UCs weighs and mapped her activities to her PIQs (below). Most of the rest is making names and numbers match across her brief, resume and Activities list, which is a good use of Tuesday's session.</li>
+    <li>I also checked what each of her 4 UCs weighs and mapped her activities to her PIQs (below). Most of the rest is making names and numbers match across her brief, resume and Activities list, which is a good use of Tuesday's session. Her short "Before Tuesday" prep list is right below.</li>
   </ol>
+</section>
+
+<section class="prep" id="prep" aria-labelledby="h-prep">
+  <div class="kicker">Before Tuesday · about 40 min total</div>
+  <h2 id="h-prep">Get ready for <span class="hl">your strategy session</span></h2>
+  <p class="lede">Do these before Tue Nov 24, 12:30 PM PT / 3:30 PM ET. Your answers save on your phone only. Tap "Copy my answers" at the bottom and email them to Ms Sweeney (MsSweeneySays@gmail.com) so we start the call ready to work.</p>
+
+  <div class="ask">
+    <b>1. Fill in "Make it match" <span class="time">(~15 min)</span></b>
+    <p>It's the next section. Type the true answer for each row.</p>
+  </div>
+
+  <div class="ask">
+    <b>2. Answer the ❓ questions in your Google Doc <span class="time">(~20 min)</span></b>
+    <p>Write your answers right into your drafts. Rough is fine. We'll shape them together.</p>
+  </div>
+
+  <div class="ask">
+    <b>3. Pick a direction for Top fix #2 <span class="time">(~2 min)</span></b>
+    <p>PIQ 4 opens with limited APs. Which way do you want to go?</p>
+    <div class="choice" role="radiogroup" aria-label="Top fix #2 direction">
+      <label><input type="radio" name="fix2" value="Add 1 sentence on how I handled the AP gap"><span>Add 1 sentence on how I handled the AP gap</span></label>
+      <label><input type="radio" name="fix2" value="Open with the barrier I actually solved"><span>Open with the barrier I actually solved</span></label>
+      <label><input type="radio" name="fix2" value="Not sure yet. Let's talk it through"><span>Not sure yet. Let's talk it through</span></label>
+    </div>
+  </div>
+
+  <div class="ask">
+    <b>4. One question for you <span class="time">(~3 min)</span></b>
+    <p>What would make Nov 30 feel done to you?</p>
+    <textarea class="field" id="goal" placeholder="Type your answer here"></textarea>
+  </div>
+
+  <button type="button" class="btn" id="copy">Copy my answers</button>
+  <p class="copy-out" id="copy-out" aria-live="polite"></p>
+</section>
+
+<section id="match" aria-labelledby="h-match">
+  <div class="kicker">Make it match · for Tuesday</div>
+  <h2 id="h-match">One true answer <span class="hl">for each</span></h2>
+  <p class="lede">Your brief, resume, drafts and our call don't always say the same thing. Readers see your Activities list right next to your PIQs, so every name, number and grade should agree. Type the true answer, then use it everywhere.</p>
+  <div class="mm" id="mm"></div>
+  <p class="progress" id="mm-progress" aria-live="polite">0 of 0 settled</p>
 </section>
 
 <section aria-labelledby="h-map">
@@ -141,7 +202,8 @@
   <div class="kicker">Dates</div>
   <h2 id="h-dates">What happens when</h2>
   <ul class="timeline">
-    <li class="now"><span class="d">Tue Nov 24</span><span>Your strategy session with Ms Sweeney, 12:30 PM PT / 3:30 PM ET. Bring your revised PIQs and your Activities list.</span></li>
+    <li class="now"><span class="d">Before Tue</span><span>Finish "Before Tuesday" above and email your copied answers to Ms Sweeney.</span></li>
+    <li><span class="d">Tue Nov 24</span><span>Your strategy session with Ms Sweeney, 12:30 PM PT / 3:30 PM ET. Bring your Google Doc and your Activities list.</span></li>
     <li><span class="d">Nov 30</span><span>Submit the UC application by 11:59 PM PT.</span></li>
   </ul>
 </section>
@@ -196,6 +258,64 @@
     b.addEventListener('change', function(){ saved[i] = b.checked; try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch(e) {} update(); });
   });
   update();
+})();
+</script>
+<script>
+(function(){
+  var ROWS = [
+    ["Black Creatives Club: your title", [["Brief","Founder & President"],["Resume","Co-Founder & President"]]],
+    ["Black Creatives Club: first members", [["Brief","5"],["Resume","7"],["PIQ 2","7"]]],
+    ["Black Student Union: grades in the club", [["Brief","Member 11th, President 12th"],["Resume","Member 10th–12th, President 12th"]]],
+    ["Black Student Union: money raised", [["Brief","$1,300"],["Resume","$400+"]]],
+    ["Black Student Union: statewide group's name", [["Brief","Statewide California association of BSUs"],["PIQ 4","Black Students of California United"]]],
+    ["Voter pre-registration", [["Brief","55+ students, through BSU"],["Our call","35 teens, through Jack and Jill"]]],
+    ["Environmental justice internship: group's name", [["Brief, PIQ 7","Urban Collective Project"],["Resume","Urban Collaborative Project"]]],
+    ["Jack and Jill: money raised", [["Resume","Over $10,000"],["Earlier draft","$10,000 by you, $20,000+ as a group"]]],
+    ["HBCU Club: your title and grades", [["Brief","Founder, grades 9–12, outside school"],["Resume","Co-Founder & President, 9th grade"]]],
+    ["Varsity volleyball: grades", [["Brief","Grades 10–12"],["Resume","Called up during CIF season, 10th grade"]]],
+    ["Club volleyball: team name", [["Brief","FIGS 17-1s"],["Resume","FIGS 18 Black"],["PIQ 8","Figs 18s"]]],
+    ["Your school's name", [["Brief, PIQ 4","Lincoln High School"],["Resume","Lincoln Preparatory High School"]]],
+    ["AKA program name", [["Brief","AKA Ebony Debutante"],["Resume","Ebony Pearls Young Leaders Program"]]]
+  ];
+  var KEY = 'msd-prep-970b1bcf', s = {};
+  try { s = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e) {}
+  s.mm = s.mm || {};
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(s)); } catch(e) {} }
+  var box = document.getElementById('mm'), prog = document.getElementById('mm-progress');
+  function esc(x){ return x.replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  ROWS.forEach(function(r, i){
+    var d = document.createElement('div'); d.className = 'row';
+    var says = r[1].map(function(p){ return '<span>' + esc(p[0]) + '</span><span>' + esc(p[1]) + '</span>'; }).join('');
+    d.innerHTML = '<div class="what">' + esc(r[0]) + '</div><div class="says">' + says + '</div>' +
+      '<label><span class="sr-only" style="position:absolute;left:-9999px">True answer for ' + esc(r[0]) + '</span><input class="field" type="text" placeholder="The true answer"></label>';
+    var inp = d.querySelector('input');
+    inp.value = s.mm[i] || '';
+    function mark(){ d.classList.toggle('done', !!inp.value.trim()); }
+    inp.addEventListener('input', function(){ s.mm[i] = inp.value; save(); mark(); count(); });
+    mark(); box.appendChild(d);
+  });
+  function count(){
+    var n = 0; ROWS.forEach(function(r, i){ if ((s.mm[i] || '').trim()) n++; });
+    prog.textContent = n === ROWS.length ? 'All ' + n + ' settled. Use these answers everywhere. 🎉' : n + ' of ' + ROWS.length + ' settled';
+  }
+  count();
+  var radios = document.querySelectorAll('input[name="fix2"]');
+  radios.forEach(function(r){ r.checked = (s.fix2 === r.value); r.addEventListener('change', function(){ s.fix2 = r.value; save(); }); });
+  var goal = document.getElementById('goal');
+  goal.value = s.goal || '';
+  goal.addEventListener('input', function(){ s.goal = goal.value; save(); });
+  document.getElementById('copy').addEventListener('click', function(){
+    var lines = ['Melea · Before Tuesday', '', 'Top fix #2 direction: ' + (s.fix2 || '(not picked yet)'), '', 'What would make Nov 30 feel done: ' + ((s.goal || '').trim() || '(blank)'), '', 'Make it match:'];
+    ROWS.forEach(function(r, i){ lines.push('- ' + r[0] + ': ' + ((s.mm[i] || '').trim() || '(blank)')); });
+    var text = lines.join('\n'), out = document.getElementById('copy-out');
+    function done(){ out.textContent = 'Copied. Paste it into an email to MsSweeneySays@gmail.com.'; }
+    function fallback(){
+      var ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); done(); } catch(e) { out.textContent = 'Copy didn\'t work on this phone. Take a screenshot instead.'; }
+      document.body.removeChild(ta);
+    }
+    try { navigator.clipboard.writeText(text).then(done, fallback); } catch(e) { fallback(); }
+  });
 })();
 </script>
 </body></html>
