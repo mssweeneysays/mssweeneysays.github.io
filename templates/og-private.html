@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html><head><meta charset="utf-8">
+<!-- Link preview for private /for/ pages. Logo = "Highlighter A on cobalt" from the Logo options canvas. -->
 <style>
 @font-face{font-family:"Manrope";font-weight:800;src:url(../assets/fonts/manrope-latin-800-normal.woff2)}
 @font-face{font-family:"Manrope";font-weight:700;src:url(../assets/fonts/manrope-latin-700-normal.woff2)}
-@font-face{font-family:"Caveat";font-weight:700;src:url(../assets/fonts/caveat-latin-700-normal.woff2)}
 *{box-sizing:border-box;margin:0}
-body{width:1200px;height:630px;background:#2D6BFF;font-family:Manrope;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px}
-.row{display:flex;align-items:center;gap:40px}
-.mark{width:220px;height:220px;filter:drop-shadow(10px 10px 0 #06251C)}
-.mark rect{stroke:#fff;stroke-width:3}
-.word{font-size:104px;font-weight:800;line-height:.98;letter-spacing:-.01em}
-.word .hl{display:inline-block;margin-top:14px;background:#FFD43B;color:#06251C;padding:0 .12em;border-radius:14px}
-.note{font-family:Caveat;font-size:54px;color:#FFD43B;transform:rotate(-1.5deg)}
+body{width:1200px;height:630px;background:#2D6BFF;font-family:Manrope;display:flex;align-items:center;justify-content:center;gap:70px}
+.icon{width:300px;height:300px;background:#fff;border-radius:44px;position:relative;overflow:hidden;flex-shrink:0}
+.icon .sw{position:absolute;left:40px;top:133px;width:220px;height:87px;background:#FFD43B;border-radius:8px 23px 10px 18px;transform:rotate(-2deg)}
+.icon .s{position:absolute;left:0;top:40px;width:300px;text-align:center;font-size:196px;font-weight:800;line-height:1;color:#2D6BFF}
+.mark{position:relative;width:560px;height:430px}
+.mark .a{position:absolute;left:24px;font-weight:800;line-height:1;letter-spacing:-.03em;color:#fff;font-size:82px}
+.mark .sw{position:absolute;left:4px;top:118px;width:556px;height:158px;background:#FFD43B;border-radius:16px 46px 20px 36px;transform:rotate(-2deg)}
+.mark .n{position:absolute;left:24px;top:130px;font-size:118px;font-weight:800;line-height:1.1;letter-spacing:-.035em;color:#2D6BFF}
+.tag{position:absolute;left:26px;top:408px;font-size:17px;font-weight:700;letter-spacing:.16em;color:#E3EBFF;white-space:nowrap}
 </style></head>
 <body>
-  <div class="row">
-    <svg class="mark" viewBox="0 0 64 64"><rect x="1.5" y="1.5" width="61" height="61" rx="14" fill="#2D6BFF"/><path d="M10 40 L54 28" stroke="#FFD43B" stroke-width="14" stroke-linecap="round"/><path d="M18 33 L28 43 L47 20" fill="none" stroke="#06251C" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    <div class="word">Ms Sweeney<br><span class="hl">Says</span></div>
+  <div class="icon"><div class="sw"></div><div class="s">S</div></div>
+  <div class="mark">
+    <div class="a" style="top:16px">Ms</div>
+    <div class="sw"></div>
+    <div class="n">Sweeney</div>
+    <div class="a" style="top:296px">Says.</div>
+    <div class="tag">WHAT COLLEGES + EMPLOYERS ACTUALLY CHOOSE</div>
   </div>
-  <p class="note">made just for you ✓</p>
 </body></html>
