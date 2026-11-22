@@ -24,3 +24,9 @@ Draft sheets show a review banner and "draft for Amanda" labels, ask search engi
 
 - Student mode (default): `/unc/`
 - Parent mode: `/unc/#parent`
+
+## Private client pages (`for/`)
+Hand-built, one per student at `for/<name>-<random8>/index.html`, always `noindex, nofollow`, never in the library.
+Every new one needs the link-preview tags (copy the `og:` and `twitter:card` block from `for/preston-4730a8b9/index.html`),
+or Instagram and iMessage show Amanda's headshot. They all share `for/og.png`, the logo card rendered from
+`templates/og-private.html` (1200x630, Playwright). Never put the student's name in og:title or og:description.
