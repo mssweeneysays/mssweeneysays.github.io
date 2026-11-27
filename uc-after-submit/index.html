@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UC After-You-Submit Checklist</title>
+<meta name="description" content="What UC does from December to July after you hit submit, the #1 thing to do and avoid while you wait, and a checklist you can tick off. From a former admissions reader.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ms Sweeney Says">
+<meta property="og:title" content="You hit submit on UC. Here's what happens next.">
+<meta property="og:description" content="What UC does from December to July, the #1 do and don't while you wait, and a checklist you can tick off.">
+<meta property="og:url" content="https://mssweeneysays.github.io/uc-after-submit/">
+<meta property="og:image" content="https://mssweeneysays.github.io/uc-after-submit/og.png?v=2026-11-27">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="UC after you submit: your inbox is part of the application now.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: older sister handing you the real schedule; frank, warm, no doom.
+   IDEA: a hand-highlighted printout of UC's own calendar, the black box opened.
+   PICTURE: the Dec to Jul timeline as a highlighted page with handwritten margin notes.
+   COLOUR and TYPE: brand kit; Electric Cobalt band, Signal Yellow highlighter, Soft Cream page, Deep Pine ink; Manrope + handwriting.
+   LAYOUT: one phone column; cobalt header, timeline, do/don't pair, tickable checklist, change-report table, take, sources. */
+:root{color-scheme:light dark;
+--bg:light-dark(#f6f1e6,#0c1f1c);--paper:light-dark(#fffdf7,#13302b);--ink:light-dark(#0e3b34,#eef3ef);--soft:light-dark(#4b6660,#a9c2bb);
+--cobalt:#2457f5;--yellow:#ffd43b;--jade:light-dark(#11a877,#36d39c);--coral:light-dark(#e2504d,#ff7d78);--line:light-dark(#e3dccb,#24443e)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Manrope,system-ui,sans-serif;overflow-x:clip}
+.wrap{max-width:720px;margin:0 auto;padding:0 max(4vw,16px)}
+.draft{background:var(--coral);color:#fff;text-align:center;font-weight:700;font-size:14px;padding:8px 12px}
+header{background:var(--cobalt);color:#fff;padding:28px 0 30px}
+.brand{font-weight:800;font-size:15px;margin:0 0 14px}
+.brand mark{background:var(--yellow);color:#0b2a26;padding:0 5px;border-radius:3px}
+h1{font-size:clamp(32px,7vw,46px);line-height:1.05;margin:0 0 14px;text-wrap:balance}
+h1 mark{background:var(--yellow);color:#0b2a26;padding:0 6px;border-radius:4px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.promise{font-size:17px;margin:0 0 20px;max-width:34em}
+.bar{display:flex;flex-wrap:wrap;gap:10px}
+.seg{display:inline-flex;background:rgba(255,255,255,.16);border-radius:999px;padding:4px}
+.seg button,.btn{font:700 15px Manrope,sans-serif;border:0;border-radius:999px;min-height:44px;padding:0 18px;cursor:pointer}
+.seg button{background:transparent;color:#fff}
+.seg button[aria-pressed=true]{background:#fff;color:var(--cobalt)}
+.btn{background:var(--yellow);color:#0b2a26;box-shadow:0 3px 0 #0b2a26}
+.btn:active{transform:translateY(2px);box-shadow:0 1px 0 #0b2a26}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+section{padding:32px 0 8px}
+h2{font-size:26px;line-height:1.15;margin:0 0 6px}
+.sub{color:var(--soft);margin:0 0 18px}
+.hand{font-family:Caveat,cursive;font-size:22px;line-height:1.1;color:var(--cobalt)}
+:root[data-theme=dark] .hand{color:#8fb0ff}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .hand{color:#8fb0ff}}
+.page{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 18px 8px;box-shadow:0 10px 24px -18px rgba(0,0,0,.45)}
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;grid-template-columns:88px minmax(0,1fr);gap:14px;padding:0 0 16px;position:relative}
+.tl li::before{content:"";position:absolute;left:96px;top:10px;bottom:-4px;border-left:2px dashed var(--line)}
+.tl li:last-child::before{display:none}
+.when{font-weight:800;font-size:15px;white-space:nowrap;padding-top:2px}
+.what{padding-left:14px;position:relative}
+.what::before{content:"";position:absolute;left:-9px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--cobalt);border:2px solid var(--paper)}
+.what b{display:block}
+.what p{margin:2px 0 0;color:var(--soft);font-size:15px}
+.hl{background:linear-gradient(transparent 45%,var(--yellow) 45%,var(--yellow) 90%,transparent 90%);color:inherit}
+:root[data-theme=dark] .hl{background:linear-gradient(transparent 45%,rgba(255,212,59,.45) 45%,rgba(255,212,59,.45) 90%,transparent 90%)}
+.tl .hand{display:block;margin-top:4px}
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media(max-width:600px){.pair{grid-template-columns:minmax(0,1fr)}.tl li{grid-template-columns:72px minmax(0,1fr)}.tl li::before{left:80px}}
+.card{border-radius:14px;padding:18px;color:#0b2a26}
+.card.do{background:#c9f2e1}.card.dont{background:#ffd9d6}
+.card .tag{font-weight:800;font-size:14px;margin:0}
+.card h3{font-size:21px;line-height:1.2;margin:4px 0 8px}
+.card p{margin:0 0 8px;font-size:15px}
+.prog{display:flex;align-items:center;gap:12px;margin:0 0 12px;font-weight:700}
+.meter{flex:1;height:12px;background:var(--line);border-radius:999px;overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:var(--jade);transition:width .3s}
+@media(prefers-reduced-motion:reduce){.meter i{transition:none}}
+.group{margin:18px 0 6px;font-weight:800;font-size:15px;color:var(--soft)}
+.check{list-style:none;margin:0;padding:0}
+.check li{border-bottom:1px solid var(--line)}
+.check label{display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px;padding:12px 0;cursor:pointer;min-height:44px}
+.check input{width:24px;height:24px;margin:2px 0 0;accent-color:var(--jade)}
+.check span b{display:block}
+.check span small{display:block;color:var(--soft);font-size:14px;margin-top:2px}
+.check input:checked+span b{text-decoration:line-through;text-decoration-color:var(--jade);text-decoration-thickness:2px}
+.only{display:inline-block;font-size:12px;font-weight:800;background:var(--line);border-radius:4px;padding:1px 6px;margin-left:4px;vertical-align:2px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:14px;color:var(--soft)}
+.take{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;align-items:start}
+.face{width:64px;height:64px;border-radius:50%;background:var(--cobalt);color:#fff;display:grid;place-items:center;font-weight:800;font-size:22px}
+.take blockquote{margin:0;font-size:17px}
+.label{font-size:13px;color:var(--soft);margin-top:6px}
+.review{background:var(--yellow);color:#0b2a26;font-weight:800;font-size:12px;border-radius:4px;padding:1px 6px}
+.src{font-size:14px;color:var(--soft);padding-left:18px}
+.src li{margin-bottom:6px}
+.src a{color:inherit;overflow-wrap:anywhere}
+footer{padding:28px 0 48px;font-size:15px}
+footer a{color:var(--cobalt);font-weight:700}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#0b2a26;color:#fff;padding:10px 16px;border-radius:999px;font-weight:700;opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.on{opacity:1}
+[data-p]{display:none}
+body.parent [data-s]{display:none}
+body.parent [data-p]{display:revert}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p class="brand">Ms <mark>Sweeney</mark> Says</p>
+    <h1>You hit submit on UC. <mark>Here's what happens next.</mark></h1>
+    <p class="promise" data-s>Your application isn't sitting in a black box. It's on a schedule. Here's what UC does from now to July, and the few things you have to do while you wait.</p>
+    <p class="promise" data-p>Your student's application isn't sitting in a black box. It's on a schedule. Here's what UC does from now to July, and the few things your student has to do while they wait.</p>
+    <div class="bar">
+      <div class="seg" role="group" aria-label="Who's reading">
+        <button type="button" id="mS" aria-pressed="true">Student</button>
+        <button type="button" id="mP" aria-pressed="false">Parent</button>
+      </div>
+      <button type="button" class="btn" id="share">Share this ⧉</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+<section>
+  <h2>What UC does, month by month</h2>
+  <p class="sub">For fall 2027 applicants. Every date is from UC's own pages.</p>
+  <div class="page">
+    <ol class="tl">
+      <li><div class="when">Dec</div><div class="what"><b>Your file goes to every campus you picked.</b><p>Each campus reviews it on its own. Each one emails to confirm it got your application.</p></div></li>
+      <li><div class="when">Dec</div><div class="what"><b><span class="hl">A random group gets a verification email.</span></b><p>UC asks them to prove one thing on the application: an award, an activity, a job, even a PIQ detail. Miss the deadline in that email, and the application is withdrawn at every UC campus.</p><span class="hand">random = not in trouble. Just send proof on time.</span></div></li>
+      <li><div class="when">Oct to Dec</div><div class="what"><b>Berkeley invites some first-year applicants to send letters of recommendation.</b><p>Up to 2 letters, at least 1 from a teacher in a core academic subject. The due date is in the invite.</p></div></li>
+      <li><div class="when">Dec to Jan</div><div class="what"><b>Reading season.</b><p>Trained readers score your whole file. At UCLA, every application is read twice, start to finish.</p></div></li>
+      <li><div class="when">By Jan</div><div class="what"><b><span class="hl">Every campus sends a portal login.</span></b><p>That portal is where your decision shows up. Set it up the day the email lands.</p></div></li>
+      <li><div class="when">Jan 31</div><div class="what"><b>Transfer Academic Update due.</b> <span class="only">Transfers</span><p>Required for every transfer applicant, even with nothing to change.</p></div></li>
+      <li><div class="when">Mar 2</div><div class="what"><b>Money deadline.</b><p>FAFSA or California Dream Act Application, plus the Cal Grant GPA Verification Form.</p></div></li>
+      <li><div class="when">March</div><div class="what"><b>First-year decisions post.</b><p>Some campuses release earlier. Transfer decisions come by the end of April.</p></div></li>
+      <li><div class="when">May 1</div><div class="what"><b>Say yes to one campus.</b><p>Submit your Statement of Intent to Register. Transfers have until June 1.</p></div></li>
+      <li><div class="when">Jul 1</div><div class="what"><b>Final transcripts due</b> to the campus you're attending.<p>Your offer is provisional until they check it.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h2>If you only do one thing, and avoid one thing</h2>
+  <div class="pair">
+    <div class="card do">
+      <p class="tag">#1 Do</p>
+      <h3>Treat your inbox and portals like part of the application.</h3>
+      <p data-s>The verification email, Berkeley's letter invite and the portal logins all come by email. Missing one is the only way a finished application can still fall apart.</p>
+      <p data-p>The verification email, Berkeley's letter invite and the portal logins all come to your student's email. Offer to be the second set of eyes: a quick Sunday check together through January.</p>
+    </div>
+    <div class="card dont">
+      <p class="tag">#1 Don't</p>
+      <h3>Don't let senior grades slip, or quietly drop a class.</h3>
+      <p data-s>Every UC offer is provisional. Campuses check your final transcript, and a D or F in senior year can get an offer pulled.</p>
+      <p data-p>Every UC offer is provisional until the final transcript arrives. A D or F in senior year can get an offer pulled. Ask to see grades at each progress report, not just in June.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 data-s>Your checklist</h2>
+  <h2 data-p>Your student's checklist</h2>
+  <p class="sub">Tap to check things off. Your checks stay on this phone.</p>
+  <div class="prog"><div class="meter"><i id="bar"></i></div><span id="count">0 of 0</span></div>
+  <div id="list"></div>
+</section>
+
+<section>
+  <h2>Something changed? Here's who to tell.</h2>
+  <p class="sub">UC's own rules, as of fall 2027. Report it in each campus's portal.</p>
+  <div class="page">
+    <table>
+      <thead><tr><th>What changed</th><th>Tell every campus you applied to except</th></tr></thead>
+      <tbody>
+        <tr><td>You added or dropped a course, or changed schools</td><td>UC Berkeley, UCLA, UC San Diego, UC Santa Barbara</td></tr>
+        <tr><td>You got lower than a C in a course</td><td>UC Berkeley, UCLA</td></tr>
+      </tbody>
+    </table>
+    <p class="hand" style="margin:12px 0 10px">Save a copy of whatever you send.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Ms Sweeney's take</h2>
+  <div class="take">
+    <div class="face" aria-hidden="true">MS</div>
+    <div>
+      <blockquote>"When I read applications, I could only give you credit for what was on the page. Your inbox is part of the page now. So your job isn't waiting. It's watching."</blockquote>
+      <p class="label">First sentence: firsthand, from reading applications. The rest is my advice.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Sources</h2>
+  <ol class="src">
+    <li><a href="https://admission.universityofcalifornia.edu/counselors/_files/documents/quick-reference-guide-to-uc-admissions.pdf">Quick Reference Guide to UC Admissions (Aug 2026), verification section</a></li>
+    <li><a href="https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html">UC: Dates and deadlines, fall 2027</a></li>
+    <li><a href="https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/after-you-apply/">UC: After you apply (reporting changes)</a></li>
+    <li><a href="https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/after-you-apply/admissions-decisions.html">UC: Admissions decisions (portals, provisional offers)</a></li>
+    <li><a href="https://admissions.berkeley.edu/apply-to-berkeley/first-year-applicants-uc-berkeley/first-year-policy-changes/">UC Berkeley: Letters of recommendation</a></li>
+    <li><a href="https://admissions.berkeley.edu/application-faqs">UC Berkeley: Application FAQs (December confirmation)</a></li>
+    <li><a href="https://www.admission.ucla.edu/apply/first-year/first-year-requirements/application-review-process">UCLA: Application review process</a></li>
+    <li><a href="https://admissions.ucsc.edu/apply/dates-and-deadlines.html">UC Santa Cruz: Dates and deadlines (TAU, Jan 31, 2027)</a></li>
+    <li><a href="https://admissions.sa.ucsb.edu/freshman-conditions">UC Santa Barbara: Conditions of admission</a></li>
+  </ol>
+</section>
+</main>
+
+<footer class="wrap">
+  <p><b>Applying somewhere else too?</b> Find your school's one-page cheat sheet: <a href="https://mssweeneysays.github.io/">mssweeneysays.github.io</a></p>
+  <p>Follow <b>@mssweeneysays</b> so you don't miss what's next. And that's what Ms Sweeney says.</p>
+</footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+{
+const ITEMS=[
+ {g:"Tonight",id:"contacts",t:"Add every UC you applied to to your email contacts.",d:"So their emails skip the spam folder."},
+ {g:"Tonight",id:"save",t:"Save your UC application PDF and your application ID.",d:"You'll need the ID if anything goes wrong."},
+ {g:"December",id:"confirm",t:"Get a confirmation email from each campus.",d:"No Berkeley confirmation by the end of December? Berkeley says to call the UC Application Center at 800-207-1710."},
+ {g:"December",id:"verify",t:"Got a verification email? Send the proof before its deadline.",d:"It's random. The email says what counts as proof. A letter from a counselor, teacher or coach can work."},
+ {g:"December",id:"berkeley",t:"Got Berkeley's letter invite? Ask 2 recommenders right away.",d:"At least 1 from a core academic teacher. Send them the link from the invite.",only:"Berkeley"},
+ {g:"Through January",id:"portals",t:"Set up each campus portal the day its email arrives.",d:"That's where your decision posts."},
+ {g:"Through January",id:"sunday",t:"Check spam every Sunday.",d:"Five minutes. Search 'UC' and each campus name."},
+ {g:"Through January",id:"tau",t:"Submit your Transfer Academic Update by Jan 31.",d:"Even if nothing changed.",only:"Transfers"},
+ {g:"All spring",id:"grades",t:"Keep every senior grade at a C or better.",d:"Offers are provisional until your final transcript is checked."},
+ {g:"All spring",id:"report",t:"Report course changes and low grades the way each campus asks.",d:"See the table below."},
+ {g:"All spring",id:"aid",t:"Submit FAFSA or the Dream Act Application and the Cal Grant GPA form by March 2.",d:"This is the money deadline."},
+ {g:"Skip these",id:"extras",t:"Don't send extra letters, essays or updates.",d:"UC doesn't read them. Berkeley, UC San Diego and UC Santa Barbara say updates won't be considered."},
+ {g:"Skip these",id:"sir",t:"Don't say yes to a campus until you've heard from all of them.",d:"UC encourages waiting. You can only accept one."}
+];
+const KEY="ms-uc-after-submit";
+let done={};
+try{done=JSON.parse(localStorage.getItem(KEY)||"{}")||{}}catch(e){done={}}
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const groups=[...new Set(ITEMS.map(i=>i.g))];
+document.getElementById("list").innerHTML=groups.map(g=>'<p class="group">'+esc(g)+'</p><ul class="check">'+ITEMS.filter(i=>i.g===g).map(i=>'<li><label><input type="checkbox" id="c-'+i.id+'" data-id="'+i.id+'"'+(done[i.id]?" checked":"")+'><span><b>'+esc(i.t)+(i.only?' <span class="only">'+esc(i.only)+'</span>':'')+'</b><small>'+esc(i.d)+'</small></span></label></li>').join('')+'</ul>').join('');
+const bar=document.getElementById("bar"),count=document.getElementById("count");
+const upd=()=>{const n=ITEMS.filter(i=>done[i.id]).length;bar.style.width=(n/ITEMS.length*100)+"%";count.textContent=n+" of "+ITEMS.length};
+upd();
+document.getElementById("list").addEventListener("change",e=>{const id=e.target.dataset.id;if(!id)return;done[id]=e.target.checked;try{localStorage.setItem(KEY,JSON.stringify(done))}catch(err){}upd()});
+const mS=document.getElementById("mS"),mP=document.getElementById("mP");
+const setMode=(p,save)=>{document.body.classList.toggle("parent",p);mS.setAttribute("aria-pressed",String(!p));mP.setAttribute("aria-pressed",String(p));if(save){try{localStorage.setItem(KEY+"-mode",p?"p":"s")}catch(err){}}};
+let start=location.hash==="#parent";
+if(!start){try{start=localStorage.getItem(KEY+"-mode")==="p"}catch(err){}}
+setMode(start,false);
+mS.addEventListener("click",()=>setMode(false,true));
+mP.addEventListener("click",()=>setMode(true,true));
+addEventListener("hashchange",()=>setMode(location.hash==="#parent",false));
+const toast=document.getElementById("toast");
+const say=m=>{toast.textContent=m;toast.classList.add("on");setTimeout(()=>toast.classList.remove("on"),2000)};
+document.getElementById("share").addEventListener("click",async()=>{
+ const url=location.href.split("#")[0];
+ try{if(navigator.share){await navigator.share({title:"UC after-you-submit checklist",url});return}}catch(err){if(err&&err.name==="AbortError")return}
+ try{await navigator.clipboard.writeText(url);say("Link copied")}catch(err){say("Copy the link from the address bar")}
+});
+}
+</script>
+</body>
+</html>
